@@ -1,6 +1,8 @@
+{% include 'header.html' %}
+
 <div class="container">
     <h1>Admin Login</h1>
-    <form action="{{ url_for('login') }}" method="POST">
+    <form action="{{ url_for('routes.login') }}" method="POST">
         <label for="username">Username</label>
         <input type="text" name="username" id="username" required>
         <br><br>
@@ -10,7 +12,6 @@
         <button type="submit">Login</button>
     </form>
 
-    <!-- Display flash messages -->
     {% with messages = get_flashed_messages() %}
     {% if messages %}
     <div class="flash-messages">
@@ -21,3 +22,5 @@
     {% endif %}
     {% endwith %}
 </div>
+
+{% include 'footer.html' %}

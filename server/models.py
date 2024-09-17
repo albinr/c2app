@@ -1,5 +1,6 @@
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
+from flask_login import UserMixin
 from flask_bcrypt import Bcrypt
 
 db = SQLAlchemy()
@@ -15,7 +16,7 @@ class Device(db.Model):
     def __repr__(self):
         return f"<Device {self.device_name}>"
 
-class User(db.Model):
+class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(150), unique=True, nullable=False)
     password_hash = db.Column(db.String(150), nullable=False)
