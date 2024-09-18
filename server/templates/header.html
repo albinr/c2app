@@ -17,8 +17,12 @@
     <nav>
         <ul>
             <li {%- if request.path == "/" %} class="active" {% endif %}><a href="{{ url_for('routes.main') }}">Home</a></li>
+            
+            {%- if current_user.is_authenticated %}
             <li {%- if request.path == "/devices" %} class="active" {% endif %}><a href="{{ url_for('routes.devices') }}">Devices</a></li>
-            <li {%- if current_user.is_authenticated %} class="active" {% endif %}><a href="{{ url_for('routes.logout') }}">Logout</a></li>
+            <li><a href="{{ url_for('routes.logout') }}">Logout</a></li>
+            {%- else %}
             <li {%- if request.path == "/login" %} class="active" {% endif %}><a href="{{ url_for('routes.login') }}">Login</a></li>
+            {%- endif %}
         </ul>
     </nav>

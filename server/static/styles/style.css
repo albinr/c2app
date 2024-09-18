@@ -1,9 +1,21 @@
+
+
 /* General Styles */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
 }
 
 h1 {
@@ -21,6 +33,14 @@ h1 {
     border-radius: 8px;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 0;
+}
+
 /* Nav */
 
 nav {
@@ -32,8 +52,8 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
     padding: 0;
@@ -44,6 +64,10 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #333;
+}
+
+nav ul li.active a {
+    color: blue;
 }
 
 /* Table Styles */

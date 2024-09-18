@@ -8,17 +8,33 @@ routes = Blueprint('routes', __name__)
 def main():
     return render_template("index.html")
 
+@routes.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        
+        existing_user = User.query.filter_by(username=username).first()
+        if existing_user:
+            flash('Username already exists. Please choose another one.')
+            return redirect(url_for('routes.signup'))
+        
+        new_user = User(username=username)
+        new_user.set_password(password)
+
+        db.session.add(new_user)
+        db.session.commit()
+
+        flash('User created successfully! You can now log in.')
+        return redirect(url_for('routes.login'))
+    
+    return render_template("signup.html")
+
 @routes.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
-        if username == "admin" and password == "admin":
-            user = User(id=999, username="admin")
-            login_user(user)
-            flash('Login successful as admin!')
-            return redirect(url_for('routes.devices'))
 
         user = User.query.filter_by(username=username).first()
 
@@ -39,7 +55,7 @@ def logout():
     return redirect(url_for('routes.login'))
 
 @routes.route('/devices')
-# @login_required
+@login_required
 def devices():
     devices = Device.query.all()
     return render_template("devices.html", devices=devices)
@@ -57,17 +73,16 @@ def post_delete_device(id):
 def api_add_device():
     try:
         data = request.json
-        print(data)  # Print the received data for debugging
+        print(data)
 
-        # Add the new device to the database
         new_device = Device(device_name=data['device_name'], os_version=data['os_version'])
         db.session.add(new_device)
         db.session.commit()
         
-        print(f"Device {new_device.device_name} added!")  # Debugging info
+        print(f"Device {new_device.device_name} added!")
         return jsonify({"message": "Device added successfully!"}), 201
     except Exception as e:
-        print(f"Error: {str(e)}")  # Log the error
+        print(f"Error: {str(e)}")
         db.session.rollback()
         return jsonify({"error": "An error occurred."}), 400
 
@@ -93,3 +108,7 @@ def api_device_heartbeat(id):
     device.last_heartbeat = db.func.current_timestamp()
     db.session.commit()
     return jsonify({"message": f"Device {id}: Heartbeat received!"}), 200
+
+@routes.route('/ping', methods=['GET'])
+def ping():
+    return jsonify({"message": "Server is running"}), 200
