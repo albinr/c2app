@@ -67,7 +67,7 @@ def post_delete_device(id):
     db.session.delete(device)
     db.session.commit()
     flash(f"Device {device.device_name} deleted successfully!")
-    return redirect(url_for('routes.main'))
+    return redirect(url_for('routes.devices'))
 
 @routes.route('/device', methods=['POST'])
 def api_add_device():
