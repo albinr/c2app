@@ -60,6 +60,12 @@ def devices():
     devices = Device.query.all()
     return render_template("devices.html", devices=devices)
 
+@routes.route('/devices/<int:id>')
+@login_required
+def single_device(id):
+    device = Device.query.get_or_404(id)  # Fetch device by ID or return 404 if not found
+    return render_template("single-device.html", device=device)
+
 @routes.route('/device/<int:id>/delete', methods=['POST'])
 @login_required
 def post_delete_device(id):
@@ -73,18 +79,27 @@ def post_delete_device(id):
 def api_add_device():
     try:
         data = request.json
-        print(data)
 
-        new_device = Device(device_name=data['device_name'], os_version=data['os_version'])
+        existing_device = Device.query.filter_by(hardware_id=data['hardware_id']).first()
+        if existing_device:
+            return jsonify({"error": "A device with this hardware ID already exists."}), 400
+
+        new_device = Device(
+            device_name=data['device_name'],
+            os_version=data['os_version'],
+            hardware_id=data['hardware_id'],
+            geo_location=data.get('geo_location'),
+            installed_apps=','.join(data.get('installed_apps', []))  # Join the app list into a string
+        )
         db.session.add(new_device)
         db.session.commit()
-        
-        print(f"Device {new_device.device_name} added!")
+
         return jsonify({"message": "Device added successfully!"}), 201
+
     except Exception as e:
-        print(f"Error: {str(e)}")
         db.session.rollback()
-        return jsonify({"error": "An error occurred."}), 400
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 400
+
 
 @routes.route('/device/<int:id>', methods=['DELETE'])
 def api_delete_device(id):
@@ -102,12 +117,27 @@ def api_get_device(id):
         'timestamp': device.timestamp
     }), 200
 
-@routes.route('/device/<int:id>/heartbeat', methods=['POST'])
-def api_device_heartbeat(id):
-    device = Device.query.get_or_404(id)
-    device.last_heartbeat = db.func.current_timestamp()
-    db.session.commit()
-    return jsonify({"message": f"Device {id}: Heartbeat received!"}), 200
+@routes.route('/device/heartbeat', methods=['POST'])
+def api_device_heartbeat():
+    try:
+        data = request.json
+        hardware_id = data.get('hardware_id')
+
+        if not hardware_id:
+            return jsonify({"error": "Hardware ID is required"}), 400
+
+        device = Device.query.filter_by(hardware_id=hardware_id).first()
+        if not device:
+            return jsonify({"error": "Device not found"}), 404
+
+        device.last_heartbeat = db.func.current_timestamp()
+        db.session.commit()
+
+        return jsonify({"message": f"Heartbeat for device {device.device_name} received!"}), 200
+
+    except Exception as e:
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
 
 @routes.route('/ping', methods=['GET'])
 def ping():

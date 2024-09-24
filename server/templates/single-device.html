@@ -1,0 +1,30 @@
+{% include 'header.html' %}
+
+<div class="container">
+
+    <h1>Device Details</h1>
+
+    <ul>
+        <li><strong>Device Name:</strong> {{ device.device_name }}</li>
+        <li><strong>OS Version:</strong> {{ device.os_version }}</li>
+        <li><strong>Geolocation:</strong> {{ device.geo_location or "N/A" }}</li>
+        <li><strong>Installed Applications:</strong>
+            <ul>
+                {% if device.installed_apps %}
+                {% for app in device.installed_apps.split(',') %}
+                <li>{{ app }}</li>
+                {% endfor %}
+                {% else %}
+                <li>No applications available.</li>
+                {% endif %}
+            </ul>
+        </li>
+        <li><strong>Last Heartbeat:</strong> {{ device.last_heartbeat or "No heartbeats yet" }}</li>
+        <li><strong>Timestamp:</strong> {{ device.timestamp }}</li>
+    </ul>
+
+    <a href="{{ url_for('routes.devices') }}">Back to Device List</a>
+
+</div>
+
+{% include 'footer.html' %}

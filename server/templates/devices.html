@@ -17,7 +17,7 @@
         <tbody>
             {% for device in devices %}
             <tr>
-                <td>{{ device.device_name }}</td>
+                <td><a href="{{ url_for('routes.single_device', id=device.id) }}">{{ device.device_name }}</a></td>
                 <td>{{ device.os_version }}</td>
                 <td>{{ device.timestamp }}</td>
                 <td>{{ device.last_heartbeat or 'No heartbeats yet' }}</td>

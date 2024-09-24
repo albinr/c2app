@@ -8,8 +8,11 @@ bcrypt = Bcrypt()
 
 class Device(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    device_name = db.Column(db.String(50))
-    os_version = db.Column(db.String(100))
+    hardware_id = db.Column(db.String(200), nullable=False, index=True, unique=True)
+    device_name = db.Column(db.String(50), nullable=False)
+    os_version = db.Column(db.String(100), nullable=False)
+    geo_location = db.Column(db.String(100))
+    installed_apps = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, default=db.func.current_timestamp())
     last_heartbeat = db.Column(db.DateTime)
 
