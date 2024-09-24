@@ -155,6 +155,7 @@ def api_device_heartbeat():
 
         device.last_heartbeat = db.func.current_timestamp()
         db.session.commit()
+        current_app.logger.info(f"Recived hearbeat from {device.device_name}.")
 
         return jsonify({"message": f"Heartbeat for device {device.device_name} received!"}), 200
 

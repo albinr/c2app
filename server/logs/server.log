@@ -861,3 +861,586 @@
 2024-09-24 22:07:10,034 - INFO - 127.0.0.1 - - [24/Sep/2024 22:07:10] "GET /logs HTTP/1.1" 200 -
 2024-09-24 22:07:10,077 - INFO - 127.0.0.1 - - [24/Sep/2024 22:07:10] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
 2024-09-24 22:07:10,079 - INFO - 127.0.0.1 - - [24/Sep/2024 22:07:10] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 22:15:01,675 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-24 22:15:01,675 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-24 22:15:01,676 - INFO -  * Restarting with stat
+2024-09-24 22:15:02,087 - WARNING -  * Debugger is active!
+2024-09-24 22:15:02,090 - INFO -  * Debugger PIN: 140-256-292
+2024-09-24 22:15:05,306 - INFO - 127.0.0.1 - - [24/Sep/2024 22:15:05] "GET / HTTP/1.1" 200 -
+2024-09-24 22:15:05,363 - INFO - 127.0.0.1 - - [24/Sep/2024 22:15:05] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 22:15:05,363 - INFO - 127.0.0.1 - - [24/Sep/2024 22:15:05] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 22:16:28,664 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:28] "[32mGET /devices HTTP/1.1[0m" 302 -
+2024-09-24 22:16:28,679 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:28] "GET /login?next=/devices HTTP/1.1" 200 -
+2024-09-24 22:16:28,729 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:28] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 22:16:28,732 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:28] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 22:16:33,376 - INFO - User admin logged in.
+2024-09-24 22:16:33,377 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-24 22:16:33,391 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:33] "GET /devices HTTP/1.1" 200 -
+2024-09-24 22:16:33,456 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:33] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 22:16:33,457 - INFO - 127.0.0.1 - - [24/Sep/2024 22:16:33] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:08:16,369 - INFO - Server was pinged.
+2024-09-24 23:08:16,371 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:16] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:08:16,379 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:08:16,380 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:16] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:08:25,327 - INFO - New device: albinxps added to database.
+2024-09-24 23:08:25,342 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:25] "[35m[1mPOST /device HTTP/1.1[0m" 201 -
+2024-09-24 23:08:26,377 - INFO - Server was pinged.
+2024-09-24 23:08:26,378 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:26] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:08:26,411 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:26] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:08:36,015 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:36] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:08:36,055 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:36] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:08:36,060 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:36] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:08:36,226 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-24 23:08:36,388 - INFO - Server was pinged.
+2024-09-24 23:08:36,389 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:36] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:08:36,434 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:36] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:08:38,766 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:38] "[35m[1mGET /devices/3 HTTP/1.1[0m" 500 -
+2024-09-24 23:08:38,803 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:38] "GET /devices/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-24 23:08:38,807 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:38] "GET /devices/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-24 23:08:38,862 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:38] "GET /devices/3?__debugger__=yes&cmd=resource&f=console.png&s=4BFQNnnFEGLa5rGuTuh8 HTTP/1.1" 200 -
+2024-09-24 23:08:38,960 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:38] "GET /devices/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-24 23:08:46,399 - INFO - Server was pinged.
+2024-09-24 23:08:46,401 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:46] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:08:46,453 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:46] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:08:56,410 - INFO - Server was pinged.
+2024-09-24 23:08:56,411 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:56] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:08:56,469 - INFO - 127.0.0.1 - - [24/Sep/2024 23:08:56] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:09:06,416 - INFO - Server was pinged.
+2024-09-24 23:09:06,417 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:06] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:09:06,486 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:06] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:09:16,420 - INFO - Server was pinged.
+2024-09-24 23:09:16,420 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:16] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:09:16,505 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:16] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:09:26,430 - INFO - Server was pinged.
+2024-09-24 23:09:26,432 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:26] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:09:26,528 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:26] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:09:36,439 - INFO - Server was pinged.
+2024-09-24 23:09:36,440 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:36] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:09:36,552 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:36] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:09:46,444 - INFO - Server was pinged.
+2024-09-24 23:09:46,444 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:46] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:09:46,570 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:46] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:09:56,449 - INFO - Server was pinged.
+2024-09-24 23:09:56,450 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:56] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:09:56,610 - INFO - 127.0.0.1 - - [24/Sep/2024 23:09:56] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:10:06,458 - INFO - Server was pinged.
+2024-09-24 23:10:06,460 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:06] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:10:06,658 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:06] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:10:16,471 - INFO - Server was pinged.
+2024-09-24 23:10:16,473 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:16] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:10:16,693 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:16] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:10:26,484 - INFO - Server was pinged.
+2024-09-24 23:10:26,486 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:26] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:10:26,715 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:26] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:10:36,492 - INFO - Server was pinged.
+2024-09-24 23:10:36,492 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:36] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:10:36,737 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:36] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:10:46,496 - INFO - Server was pinged.
+2024-09-24 23:10:46,497 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:46] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:10:46,756 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:46] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:10:56,504 - INFO - Server was pinged.
+2024-09-24 23:10:56,506 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:56] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:10:56,779 - INFO - 127.0.0.1 - - [24/Sep/2024 23:10:56] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:11:06,798 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:06] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:11:12,580 - INFO - Server was pinged.
+2024-09-24 23:11:12,580 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:12] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:11:12,586 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:11:12,588 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:12] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:11:22,585 - INFO - Server was pinged.
+2024-09-24 23:11:22,586 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:22] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:11:22,592 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:11:22,593 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:22] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:11:32,594 - INFO - Server was pinged.
+2024-09-24 23:11:32,596 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:32] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:11:32,610 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:11:32,612 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:32] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:11:42,602 - INFO - Server was pinged.
+2024-09-24 23:11:42,602 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:42] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:11:42,617 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:11:42,618 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:42] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:11:52,607 - INFO - Server was pinged.
+2024-09-24 23:11:52,608 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:52] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:11:52,623 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:11:52,623 - INFO - 127.0.0.1 - - [24/Sep/2024 23:11:52] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:12:02,612 - INFO - Server was pinged.
+2024-09-24 23:12:02,612 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:02] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:12:02,628 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:12:02,629 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:02] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:12:12,621 - INFO - Server was pinged.
+2024-09-24 23:12:12,623 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:12] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:12:12,640 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:12:12,642 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:12] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:12:22,635 - INFO - Server was pinged.
+2024-09-24 23:12:22,637 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:22] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:12:22,651 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:12:22,651 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:22] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:12:32,642 - INFO - Server was pinged.
+2024-09-24 23:12:32,643 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:32] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:12:32,656 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:12:32,657 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:32] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:12:42,646 - INFO - Server was pinged.
+2024-09-24 23:12:42,647 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:42] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:12:42,661 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:12:42,661 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:42] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:12:52,654 - INFO - Server was pinged.
+2024-09-24 23:12:52,655 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:52] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:12:52,671 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:12:52,672 - INFO - 127.0.0.1 - - [24/Sep/2024 23:12:52] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:13:02,663 - INFO - Server was pinged.
+2024-09-24 23:13:02,664 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:02] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:13:02,680 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:13:02,681 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:02] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:13:12,669 - INFO - Server was pinged.
+2024-09-24 23:13:12,669 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:12] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:13:12,686 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:13:12,686 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:12] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:13:22,673 - INFO - Server was pinged.
+2024-09-24 23:13:22,674 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:22] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:13:22,691 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:13:22,692 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:22] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:13:32,679 - INFO - Server was pinged.
+2024-09-24 23:13:32,680 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:32] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:13:32,698 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:13:32,699 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:32] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:13:42,685 - INFO - Server was pinged.
+2024-09-24 23:13:42,685 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:42] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:13:42,704 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:13:42,704 - INFO - 127.0.0.1 - - [24/Sep/2024 23:13:42] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:14:00,820 - INFO - Server was pinged.
+2024-09-24 23:14:00,821 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:00] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:14:00,825 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:14:00,826 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:00] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:14:12,301 - INFO - Server was pinged.
+2024-09-24 23:14:12,302 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:12] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:14:12,305 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:14:12,306 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:12] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:14:22,305 - INFO - Server was pinged.
+2024-09-24 23:14:22,306 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:22] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:14:22,311 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:14:22,311 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:22] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:14:32,309 - INFO - Server was pinged.
+2024-09-24 23:14:32,310 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:32] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:14:32,316 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:14:32,317 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:32] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:14:42,314 - INFO - Server was pinged.
+2024-09-24 23:14:42,315 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:42] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:14:42,322 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:14:42,323 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:42] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:14:50,386 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:50] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:14:50,426 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:50] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:14:50,427 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:50] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:14:52,260 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:52] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:14:52,283 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:52] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:14:52,288 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:52] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:14:52,319 - INFO - Server was pinged.
+2024-09-24 23:14:52,320 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:52] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:14:52,327 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:14:52,328 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:52] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:14:53,009 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:53] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:14:53,037 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:53] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:14:53,042 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:53] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:14:53,829 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:53] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:14:53,858 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:53] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:14:53,859 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:53] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:14:54,351 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:54] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:14:54,374 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:54] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:14:54,382 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:54] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:14:59,203 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:59] "[35m[1mGET /devices/3 HTTP/1.1[0m" 500 -
+2024-09-24 23:14:59,246 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:59] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:14:59,256 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:59] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 23:14:59,283 - INFO - 127.0.0.1 - - [24/Sep/2024 23:14:59] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=console.png&s=4BFQNnnFEGLa5rGuTuh8 HTTP/1.1[0m" 304 -
+2024-09-24 23:15:00,727 - INFO - 127.0.0.1 - - [24/Sep/2024 23:15:00] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:15:03,458 - INFO - 127.0.0.1 - - [24/Sep/2024 23:15:03] "GET /devices/2 HTTP/1.1" 200 -
+2024-09-24 23:15:03,502 - INFO - 127.0.0.1 - - [24/Sep/2024 23:15:03] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:15:03,502 - INFO - 127.0.0.1 - - [24/Sep/2024 23:15:03] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:15:11,932 - INFO - 127.0.0.1 - - [24/Sep/2024 23:15:11] "GET /logs HTTP/1.1" 200 -
+2024-09-24 23:15:11,975 - INFO - 127.0.0.1 - - [24/Sep/2024 23:15:11] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:15:11,984 - INFO - 127.0.0.1 - - [24/Sep/2024 23:15:11] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:16:00,954 - INFO - Server was pinged.
+2024-09-24 23:16:00,955 - INFO - 127.0.0.1 - - [24/Sep/2024 23:16:00] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:16:00,959 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:16:00,959 - INFO - 127.0.0.1 - - [24/Sep/2024 23:16:00] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:16:08,728 - INFO - Server was pinged.
+2024-09-24 23:16:08,728 - INFO - 127.0.0.1 - - [24/Sep/2024 23:16:08] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:16:08,734 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:16:08,735 - INFO - 127.0.0.1 - - [24/Sep/2024 23:16:08] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:16:46,974 - INFO - Server was pinged.
+2024-09-24 23:16:46,975 - INFO - 127.0.0.1 - - [24/Sep/2024 23:16:46] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:16:46,978 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:16:46,979 - INFO - 127.0.0.1 - - [24/Sep/2024 23:16:46] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:19:50,164 - INFO - Server was pinged.
+2024-09-24 23:19:50,165 - INFO - 127.0.0.1 - - [24/Sep/2024 23:19:50] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:19:50,169 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:19:50,170 - INFO - 127.0.0.1 - - [24/Sep/2024 23:19:50] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:19:57,578 - INFO - Server was pinged.
+2024-09-24 23:19:57,579 - INFO - 127.0.0.1 - - [24/Sep/2024 23:19:57] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:19:57,583 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:19:57,584 - INFO - 127.0.0.1 - - [24/Sep/2024 23:19:57] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:20:02,293 - INFO - New device: albinxps added to database.
+2024-09-24 23:20:02,312 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:02] "[35m[1mPOST /device HTTP/1.1[0m" 201 -
+2024-09-24 23:20:07,997 - INFO - Server was pinged.
+2024-09-24 23:20:07,998 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:07] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:20:08,020 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:08] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:20:18,002 - INFO - Server was pinged.
+2024-09-24 23:20:18,002 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:18] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:20:18,033 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:18] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:20:28,010 - INFO - Server was pinged.
+2024-09-24 23:20:28,012 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:28] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:20:28,050 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:28] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:20:38,023 - INFO - Server was pinged.
+2024-09-24 23:20:38,025 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:38] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:20:38,066 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:38] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:20:48,030 - INFO - Server was pinged.
+2024-09-24 23:20:48,031 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:48] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:20:48,083 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:48] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:20:58,039 - INFO - Server was pinged.
+2024-09-24 23:20:58,042 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:58] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:20:58,107 - INFO - 127.0.0.1 - - [24/Sep/2024 23:20:58] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:21:08,045 - INFO - Server was pinged.
+2024-09-24 23:21:08,046 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:08] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:21:08,126 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:08] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:21:18,054 - INFO - Server was pinged.
+2024-09-24 23:21:18,057 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:18] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:21:18,147 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:18] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:21:28,064 - INFO - Server was pinged.
+2024-09-24 23:21:28,065 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:28] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:21:28,171 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:28] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:21:38,069 - INFO - Server was pinged.
+2024-09-24 23:21:38,070 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:38] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:21:38,190 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:38] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:21:48,079 - INFO - Server was pinged.
+2024-09-24 23:21:48,081 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:48] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:21:48,219 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:48] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:21:58,090 - INFO - Server was pinged.
+2024-09-24 23:21:58,091 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:58] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:21:58,251 - INFO - 127.0.0.1 - - [24/Sep/2024 23:21:58] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:22:08,098 - INFO - Server was pinged.
+2024-09-24 23:22:08,099 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:08] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:22:08,292 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:08] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:22:18,106 - INFO - Server was pinged.
+2024-09-24 23:22:18,107 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:18] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:22:18,319 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:18] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:22:28,116 - INFO - Server was pinged.
+2024-09-24 23:22:28,118 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:28] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:22:28,359 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:28] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:22:38,123 - INFO - Server was pinged.
+2024-09-24 23:22:38,124 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:38] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:22:38,386 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:38] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:22:48,133 - INFO - Server was pinged.
+2024-09-24 23:22:48,136 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:48] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:22:48,421 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:48] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:22:58,147 - INFO - Server was pinged.
+2024-09-24 23:22:58,149 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:58] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:22:58,446 - INFO - 127.0.0.1 - - [24/Sep/2024 23:22:58] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:23:08,158 - INFO - Server was pinged.
+2024-09-24 23:23:08,160 - INFO - 127.0.0.1 - - [24/Sep/2024 23:23:08] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:23:08,477 - INFO - 127.0.0.1 - - [24/Sep/2024 23:23:08] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:23:18,171 - INFO - Server was pinged.
+2024-09-24 23:23:18,173 - INFO - 127.0.0.1 - - [24/Sep/2024 23:23:18] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:23:18,502 - INFO - 127.0.0.1 - - [24/Sep/2024 23:23:18] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:25:18,585 - INFO -  * Detected change in '/home/albinr/git/bth/c2app/server/routes.py', reloading
+2024-09-24 23:25:18,699 - INFO -  * Restarting with stat
+2024-09-24 23:25:19,269 - WARNING -  * Debugger is active!
+2024-09-24 23:25:19,270 - INFO -  * Debugger PIN: 140-256-292
+2024-09-24 23:25:24,619 - INFO - Server was pinged.
+2024-09-24 23:25:24,619 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:24] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:25:24,644 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:25:24,645 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:24] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:25:34,628 - INFO - Server was pinged.
+2024-09-24 23:25:34,630 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:34] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:25:34,663 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:25:34,663 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:34] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:25:44,639 - INFO - Server was pinged.
+2024-09-24 23:25:44,641 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:44] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:25:44,680 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:25:44,680 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:44] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:25:54,647 - INFO - Server was pinged.
+2024-09-24 23:25:54,647 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:54] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:25:54,697 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:25:54,698 - INFO - 127.0.0.1 - - [24/Sep/2024 23:25:54] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:26:04,656 - INFO - Server was pinged.
+2024-09-24 23:26:04,658 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:04] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:26:04,718 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:26:04,719 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:04] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:26:14,665 - INFO - Server was pinged.
+2024-09-24 23:26:14,665 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:14] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:26:14,740 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:26:14,741 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:14] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:26:24,668 - INFO - Server was pinged.
+2024-09-24 23:26:24,669 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:24] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:26:24,765 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:26:24,766 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:24] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:26:34,673 - INFO - Server was pinged.
+2024-09-24 23:26:34,674 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:34] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:26:34,793 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:26:34,794 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:34] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:26:44,677 - INFO - Server was pinged.
+2024-09-24 23:26:44,678 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:44] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:26:44,833 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:26:44,835 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:44] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:26:54,687 - INFO - Server was pinged.
+2024-09-24 23:26:54,689 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:54] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:26:54,855 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:26:54,856 - INFO - 127.0.0.1 - - [24/Sep/2024 23:26:54] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:27:04,700 - INFO - Server was pinged.
+2024-09-24 23:27:04,700 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:04] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:27:04,890 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:27:04,891 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:04] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:27:14,710 - INFO - Server was pinged.
+2024-09-24 23:27:14,713 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:14] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:27:14,924 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:27:14,925 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:14] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:27:24,719 - INFO - Server was pinged.
+2024-09-24 23:27:24,720 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:24] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:27:24,950 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:27:24,951 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:24] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:27:34,728 - INFO - Server was pinged.
+2024-09-24 23:27:34,730 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:34] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:27:34,977 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:27:34,979 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:34] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:27:44,735 - INFO - Server was pinged.
+2024-09-24 23:27:44,736 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:44] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:27:45,003 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:27:45,003 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:45] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:27:54,745 - INFO - Server was pinged.
+2024-09-24 23:27:54,747 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:54] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:27:55,044 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:27:55,046 - INFO - 127.0.0.1 - - [24/Sep/2024 23:27:55] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:28:04,757 - INFO - Server was pinged.
+2024-09-24 23:28:04,760 - INFO - 127.0.0.1 - - [24/Sep/2024 23:28:04] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:28:05,068 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:28:05,069 - INFO - 127.0.0.1 - - [24/Sep/2024 23:28:05] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:28:14,766 - INFO - Server was pinged.
+2024-09-24 23:28:14,767 - INFO - 127.0.0.1 - - [24/Sep/2024 23:28:14] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:28:15,091 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:28:15,091 - INFO - 127.0.0.1 - - [24/Sep/2024 23:28:15] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:31:03,019 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-24 23:31:03,019 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-24 23:31:03,020 - INFO -  * Restarting with stat
+2024-09-24 23:31:03,382 - WARNING -  * Debugger is active!
+2024-09-24 23:31:03,383 - INFO -  * Debugger PIN: 140-256-292
+2024-09-24 23:31:03,951 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:03] "[32mGET /devices HTTP/1.1[0m" 302 -
+2024-09-24 23:31:03,991 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:03] "GET /login?next=/devices HTTP/1.1" 200 -
+2024-09-24 23:31:04,059 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:04] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:31:04,059 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:04] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:31:04,719 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:04] "GET /login?next=/devices HTTP/1.1" 200 -
+2024-09-24 23:31:04,769 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:04] "GET /static/styles/style.css HTTP/1.1" 200 -
+2024-09-24 23:31:04,770 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:04] "GET /static/images/blueeye.png HTTP/1.1" 200 -
+2024-09-24 23:31:05,005 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-24 23:31:10,561 - INFO - User admin logged in.
+2024-09-24 23:31:10,562 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-09-24 23:31:10,580 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:10] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:31:10,633 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:10] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:31:10,647 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:10] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:31:15,060 - INFO - User admin deleted device albinxps.
+2024-09-24 23:31:15,061 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:15] "[32mPOST /device/4/delete HTTP/1.1[0m" 302 -
+2024-09-24 23:31:15,070 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:15] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:31:15,103 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:15] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:31:15,105 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:15] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:31:16,272 - INFO - User admin deleted device albinxps.
+2024-09-24 23:31:16,272 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:16] "[32mPOST /device/3/delete HTTP/1.1[0m" 302 -
+2024-09-24 23:31:16,306 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:16] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:31:16,352 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:16] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:31:16,353 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:16] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:31:34,459 - INFO - Server was pinged.
+2024-09-24 23:31:34,459 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:34] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:31:34,464 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:31:34,465 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:34] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:31:40,450 - INFO - New device: albinxps added to database.
+2024-09-24 23:31:40,465 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:40] "[35m[1mPOST /device HTTP/1.1[0m" 201 -
+2024-09-24 23:31:44,466 - INFO - Server was pinged.
+2024-09-24 23:31:44,466 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:44] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:31:44,485 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:31:44,486 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:44] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:31:54,474 - INFO - Server was pinged.
+2024-09-24 23:31:54,476 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:54] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:31:54,503 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:31:54,504 - INFO - 127.0.0.1 - - [24/Sep/2024 23:31:54] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:32:04,486 - INFO - Server was pinged.
+2024-09-24 23:32:04,486 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:04] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:32:04,522 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:32:04,523 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:04] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:32:08,715 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:08] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:32:08,766 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:08] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:32:08,770 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:08] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:32:14,494 - INFO - Server was pinged.
+2024-09-24 23:32:14,496 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:14] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:32:14,539 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:32:14,540 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:14] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:32:24,503 - INFO - Server was pinged.
+2024-09-24 23:32:24,504 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:24] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:32:24,558 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:32:24,559 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:24] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:32:34,510 - INFO - Server was pinged.
+2024-09-24 23:32:34,511 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:34] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:32:34,577 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:32:34,577 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:34] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:32:35,029 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:35] "[35m[1mGET /devices/3 HTTP/1.1[0m" 500 -
+2024-09-24 23:32:35,071 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:35] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:32:35,074 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:35] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 23:32:35,125 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:35] "GET /devices/3?__debugger__=yes&cmd=resource&f=console.png&s=qSqqkzyEK4loHDP263K1 HTTP/1.1" 200 -
+2024-09-24 23:32:44,514 - INFO - Server was pinged.
+2024-09-24 23:32:44,514 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:44] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:32:44,597 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:32:44,597 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:44] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:32:54,518 - INFO - Server was pinged.
+2024-09-24 23:32:54,519 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:54] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:32:54,619 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:32:54,620 - INFO - 127.0.0.1 - - [24/Sep/2024 23:32:54] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:33:04,527 - INFO - Server was pinged.
+2024-09-24 23:33:04,529 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:04] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:33:04,643 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:33:04,644 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:04] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:33:08,174 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:08] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:33:10,089 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:10] "GET /devices/1 HTTP/1.1" 200 -
+2024-09-24 23:33:10,134 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:10] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:33:10,148 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:10] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:33:14,534 - INFO - Server was pinged.
+2024-09-24 23:33:14,535 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:14] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:33:14,667 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:33:14,668 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:14] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:33:24,543 - INFO - Server was pinged.
+2024-09-24 23:33:24,545 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:24] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:33:24,693 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:33:24,694 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:24] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:33:34,550 - INFO - Server was pinged.
+2024-09-24 23:33:34,551 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:34] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:33:34,713 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:33:34,713 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:34] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:33:38,710 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:38] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:33:38,748 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:38] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:33:38,751 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:38] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:33:40,940 - INFO - User admin deleted device albinxps.
+2024-09-24 23:33:40,941 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:40] "[32mPOST /device/3/delete HTTP/1.1[0m" 302 -
+2024-09-24 23:33:40,950 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:40] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:33:40,981 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:40] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:33:40,984 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:40] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:33:42,919 - INFO - New device: albinxps added to database.
+2024-09-24 23:33:42,932 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:42] "[35m[1mPOST /device HTTP/1.1[0m" 201 -
+2024-09-24 23:33:44,558 - INFO - Server was pinged.
+2024-09-24 23:33:44,560 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:44] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:33:44,730 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:33:44,731 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:44] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:33:46,129 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:46] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:33:46,157 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:46] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:33:46,160 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:46] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:33:50,132 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:50] "[35m[1mGET /devices/3 HTTP/1.1[0m" 500 -
+2024-09-24 23:33:50,168 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:50] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:33:50,170 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:50] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 23:33:50,201 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:50] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=console.png&s=qSqqkzyEK4loHDP263K1 HTTP/1.1[0m" 304 -
+2024-09-24 23:33:54,566 - INFO - Server was pinged.
+2024-09-24 23:33:54,566 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:54] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:33:54,773 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:33:54,774 - INFO - 127.0.0.1 - - [24/Sep/2024 23:33:54] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:34:04,576 - INFO - Server was pinged.
+2024-09-24 23:34:04,578 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:04] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:34:04,812 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:34:04,814 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:04] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:34:13,471 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:13] "[35m[1mGET /devices/3 HTTP/1.1[0m" 500 -
+2024-09-24 23:34:13,500 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:13] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:34:13,502 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:13] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 23:34:13,530 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:13] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=console.png&s=qSqqkzyEK4loHDP263K1 HTTP/1.1[0m" 304 -
+2024-09-24 23:34:13,644 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:13] "[36mGET /devices/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 23:34:14,587 - INFO - Server was pinged.
+2024-09-24 23:34:14,590 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:14] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:34:14,834 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:34:14,834 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:14] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:34:24,596 - INFO - Server was pinged.
+2024-09-24 23:34:24,596 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:24] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:34:24,873 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:34:24,875 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:24] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:34:34,602 - INFO - Server was pinged.
+2024-09-24 23:34:34,603 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:34] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:34:34,900 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:34:34,901 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:34] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:34:52,155 - INFO - Server was pinged.
+2024-09-24 23:34:52,155 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:52] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:34:52,180 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:34:52,181 - INFO - 127.0.0.1 - - [24/Sep/2024 23:34:52] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:35:00,262 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:00] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:35:00,292 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:00] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:35:00,295 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:00] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:35:02,160 - INFO - Server was pinged.
+2024-09-24 23:35:02,161 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:02] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:35:02,199 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:35:02,199 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:02] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:35:02,727 - INFO - User admin deleted device albinxps.
+2024-09-24 23:35:02,728 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:02] "[32mPOST /device/3/delete HTTP/1.1[0m" 302 -
+2024-09-24 23:35:02,739 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:02] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:35:02,773 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:02] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:35:02,776 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:02] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:35:05,644 - INFO - New device: albinxps added to database.
+2024-09-24 23:35:05,657 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:05] "[35m[1mPOST /device HTTP/1.1[0m" 201 -
+2024-09-24 23:35:08,577 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:08] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:35:08,612 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:08] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:35:08,613 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:08] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:35:12,167 - INFO - Server was pinged.
+2024-09-24 23:35:12,169 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:12] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:35:12,223 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:35:12,224 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:12] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:35:19,539 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:19] "GET /devices/3 HTTP/1.1" 200 -
+2024-09-24 23:35:19,597 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:19] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:35:19,600 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:19] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:35:22,178 - INFO - Server was pinged.
+2024-09-24 23:35:22,180 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:22] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:35:22,239 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:35:22,239 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:22] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:35:32,186 - INFO - Server was pinged.
+2024-09-24 23:35:32,186 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:32] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:35:32,256 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:35:32,256 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:32] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:35:42,193 - INFO - Server was pinged.
+2024-09-24 23:35:42,194 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:42] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:35:42,274 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:35:42,275 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:42] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:35:52,198 - INFO - Server was pinged.
+2024-09-24 23:35:52,199 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:52] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:35:52,294 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:35:52,294 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:52] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:35:55,872 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:55] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:35:57,157 - INFO - User admin deleted device albinxps.
+2024-09-24 23:35:57,157 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:57] "[32mPOST /device/3/delete HTTP/1.1[0m" 302 -
+2024-09-24 23:35:57,169 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:57] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:35:57,204 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:57] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:35:57,209 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:57] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:35:59,479 - INFO - Server was pinged.
+2024-09-24 23:35:59,479 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:59] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:35:59,485 - INFO - Recived hearbeat from unknown device.
+2024-09-24 23:35:59,487 - INFO - 127.0.0.1 - - [24/Sep/2024 23:35:59] "[33mPOST /device/heartbeat HTTP/1.1[0m" 404 -
+2024-09-24 23:36:01,104 - INFO - New device: albinxps added to database.
+2024-09-24 23:36:01,121 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:01] "[35m[1mPOST /device HTTP/1.1[0m" 201 -
+2024-09-24 23:36:04,001 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:04] "[31m[1mPOST /device HTTP/1.1[0m" 400 -
+2024-09-24 23:36:10,313 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:10] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:36:10,346 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:10] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:36:10,347 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:10] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:36:12,515 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:12] "GET /devices/3 HTTP/1.1" 200 -
+2024-09-24 23:36:12,567 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:12] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:36:12,572 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:12] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:36:47,990 - INFO - 127.0.0.1 - - [24/Sep/2024 23:36:47] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:42:42,003 - INFO - 127.0.0.1 - - [24/Sep/2024 23:42:42] "GET /devices/3 HTTP/1.1" 200 -
+2024-09-24 23:42:42,057 - INFO - 127.0.0.1 - - [24/Sep/2024 23:42:42] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:42:42,065 - INFO - 127.0.0.1 - - [24/Sep/2024 23:42:42] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:42:57,816 - INFO - Server was pinged.
+2024-09-24 23:42:57,816 - INFO - 127.0.0.1 - - [24/Sep/2024 23:42:57] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:42:57,836 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:42:57,837 - INFO - 127.0.0.1 - - [24/Sep/2024 23:42:57] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:43:03,726 - INFO - Server was pinged.
+2024-09-24 23:43:03,727 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:03] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:43:03,750 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:43:03,751 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:03] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:43:08,696 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:08] "GET /devices HTTP/1.1" 200 -
+2024-09-24 23:43:08,719 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:08] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:43:08,727 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:08] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:43:13,733 - INFO - Server was pinged.
+2024-09-24 23:43:13,734 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:13] "GET /ping HTTP/1.1" 200 -
+2024-09-24 23:43:13,777 - INFO - Recived hearbeat from albinxps.
+2024-09-24 23:43:13,778 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:13] "POST /device/heartbeat HTTP/1.1" 200 -
+2024-09-24 23:43:15,827 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:15] "GET /devices/3 HTTP/1.1" 200 -
+2024-09-24 23:43:15,859 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:15] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:43:15,868 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:15] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:43:19,734 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:19] "GET /logs HTTP/1.1" 200 -
+2024-09-24 23:43:19,769 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:19] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
+2024-09-24 23:43:19,777 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:19] "[36mGET /static/images/blueeye.png HTTP/1.1[0m" 304 -
+2024-09-24 23:43:34,543 - INFO - 127.0.0.1 - - [24/Sep/2024 23:43:34] "[36mGET /static/styles/style.css HTTP/1.1[0m" 304 -
