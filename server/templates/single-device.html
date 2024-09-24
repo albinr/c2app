@@ -2,28 +2,27 @@
 
 <div class="container">
 
-    <h1>Device Details</h1>
+    <h1>Device {{ device.id}} Details</h1>
 
+    <p><strong>Device Name:</strong> {{ device.device_name }}</p>
+    <p><strong>OS Version:</strong> {{ device.os_version }}</p>
+    <p><strong>Unique id:</strong> {{ device.hardware_id }}</p>
+    <p><strong>Geolocation:</strong> {{ device.geo_location or "N/A" }}</p>
+    <p><strong>Address:</strong> {{ device.country}}, {{device.city}}</p>
+
+    <p><strong>Installed Applications:</strong></p>
     <ul>
-        <li><strong>Device Name:</strong> {{ device.device_name }}</li>
-        <li><strong>OS Version:</strong> {{ device.os_version }}</li>
-        <li><strong>Geolocation:</strong> {{ device.geo_location or "N/A" }}</li>
-        <li><strong>Installed Applications:</strong>
-            <ul>
-                {% if device.installed_apps %}
-                {% for app in device.installed_apps.split(',') %}
-                <li>{{ app }}</li>
-                {% endfor %}
-                {% else %}
-                <li>No applications available.</li>
-                {% endif %}
-            </ul>
-        </li>
-        <li><strong>Last Heartbeat:</strong> {{ device.last_heartbeat or "No heartbeats yet" }}</li>
-        <li><strong>Timestamp:</strong> {{ device.timestamp }}</li>
+        {% if device.installed_apps %}
+        {% for app in device.installed_apps.split(',') %}
+        <li>{{ app }}</li>
+        {% endfor %}
+        {% else %}
+        <li>No applications available.</li>
+        {% endif %}
     </ul>
 
-    <a href="{{ url_for('routes.devices') }}">Back to Device List</a>
+    <p><strong>Last Heartbeat:</strong> {{ device.last_heartbeat or "No heartbeats yet" }}</p>
+    <p><strong>Timestamp:</strong> {{ device.timestamp }}</p>
 
 </div>
 

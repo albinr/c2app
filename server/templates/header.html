@@ -16,13 +16,17 @@
 <body>
     <nav>
         <ul>
-            <li {%- if request.path == "/" %} class="active" {% endif %}><a href="{{ url_for('routes.main') }}">Home</a></li>
-            
+            <li {%- if request.path=="/" %} class="active" {% endif %}><a href="{{ url_for('routes.main') }}"><img
+                        src="{{ url_for('static', filename='images/blueeye.png') }}" width="40" alt="blue eye"></a></li>
+
             {%- if current_user.is_authenticated %}
-            <li {%- if request.path == "/devices" %} class="active" {% endif %}><a href="{{ url_for('routes.devices') }}">Devices</a></li>
+            <li {%- if request.path=="/devices" %} class="active" {% endif %}><a
+                    href="{{ url_for('routes.devices') }}">Devices</a></li>
+            <li><a href="{{ url_for('routes.view_logs') }}">Server Logs</a></li>
             <li><a href="{{ url_for('routes.logout') }}">Logout</a></li>
             {%- else %}
-            <li {%- if request.path == "/login" %} class="active" {% endif %}><a href="{{ url_for('routes.login') }}">Login</a></li>
+            <li {%- if request.path=="/login" %} class="active" {% endif %}><a
+                    href="{{ url_for('routes.login') }}">Login</a></li>
             {%- endif %}
         </ul>
     </nav>

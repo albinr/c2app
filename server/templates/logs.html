@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+
+<div class="container">
+    <h1>Server Logs</h1>
+    <div class="log-container">
+        <div>
+            {% for line in logs %}
+            <p class="log-line">{{ line }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
