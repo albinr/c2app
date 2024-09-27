@@ -23,7 +23,7 @@
                 <td>{{ device.last_heartbeat or 'No heartbeats yet' }}</td>
                 <td>
                     <form action="{{ url_for('routes.post_delete_device', id=device.id) }}" method="POST" style="display:inline;">
-                        <button type="submit" class="delete">Delete</button>
+                        <button type="submit" class="button red-button">Delete</button>
                     </form>
                 </td>
             </tr>

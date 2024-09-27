@@ -142,7 +142,7 @@ class ClientApp:
         print(self.os_version)
         print("hardware_id", self.hardware_id)
         # print(self.geo_location)
-        # print(self.installed_apps)
+        print(self.installed_apps)
 
 
 if __name__ == "__main__":

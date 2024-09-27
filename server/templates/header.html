@@ -8,6 +8,8 @@
 
     <title>C2 App (alry23)</title>
 
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/blueeye.png') }}">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
@@ -22,7 +24,7 @@
             {%- if current_user.is_authenticated %}
             <li {%- if request.path=="/devices" %} class="active" {% endif %}><a
                     href="{{ url_for('routes.devices') }}">Devices</a></li>
-            <li><a href="{{ url_for('routes.view_logs') }}">Server Logs</a></li>
+            <li {%- if request.path=="/logs" %} class="active" {% endif %}><a href="{{ url_for('routes.view_logs') }}">Server Logs</a></li>
             <li><a href="{{ url_for('routes.logout') }}">Logout</a></li>
             {%- else %}
             <li {%- if request.path=="/login" %} class="active" {% endif %}><a
