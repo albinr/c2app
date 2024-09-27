@@ -1,169 +1,190 @@
-from flask import Blueprint, render_template, redirect, url_for, flash, jsonify, request, current_app
-from flask_login import login_user, logout_user, login_required, current_user
-from models import db, Device, User
+import aiofiles
+import asyncio
+from quart import Blueprint, render_template, redirect, url_for, flash, jsonify, request, current_app, websocket
+from quart_auth import AuthUser, login_user, logout_user, current_user, login_required, Unauthorized
+from sqlalchemy.future import select
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import func
+from models import AsyncSessionLocal, Device, User
 from nominatim import get_location_from_coordinates
+
+log_connections = set()
 
 routes = Blueprint('routes', __name__)
 
 @routes.route("/")
-def main():
-    return render_template("index.html")
+async def main():
+    return await render_template("index.html")
 
 @routes.route('/signup', methods=['GET', 'POST'])
-def signup():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        
-        existing_user = User.query.filter_by(username=username).first()
-        if existing_user:
-            flash('Username already exists. Please choose another one.')
-            return redirect(url_for('routes.signup'))
-        
-        new_user = User(username=username)
-        new_user.set_password(password)
+async def signup():
+    async with AsyncSessionLocal() as session:
+        if request.method == 'POST':
+            form_data = await request.form
+            username = form_data['username']
+            password = form_data['password']
 
-        db.session.add(new_user)
-        db.session.commit()
+            result = await session.execute(select(User).filter_by(username=username))
+            existing_user = result.scalars().first()
 
-        flash('User created successfully! You can now log in.')
-        return redirect(url_for('routes.login'))
-    
-    return render_template("signup.html")
+            if existing_user:
+                await flash('Username already exists. Please choose another one.')
+                return redirect(url_for('routes.signup'))
+
+            new_user = User(username=username)
+            new_user.set_password(password)
+            session.add(new_user)
+            await session.commit()
+
+            await flash('User created successfully! You can now log in.')
+            return redirect(url_for('routes.login'))
+
+    return await render_template("signup.html")
 
 @routes.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
+async def login():
+    async with AsyncSessionLocal() as session:
+        if request.method == 'POST':
+            form_data = await request.form
+            username = form_data['username']
+            password = form_data['password']
 
-        user = User.query.filter_by(username=username).first()
+            result = await session.execute(select(User).filter_by(username=username))
+            user = result.scalars().first()
 
-        if user and user.check_password(password):
-            login_user(user)
-            flash('Login successful!')
-            current_app.logger.info(f"User {user.username} logged in.")
-            return redirect(url_for('routes.devices'))
-        else:
-            flash('Invalid username or password')
-            current_app.logger.info(f"Failed logg in with {username}")
+            if user and user.check_password(password):
+                login_user(AuthUser(user.id))
+                await flash('Login successful!')
+                current_app.logger.info(f"User {user.username} logged in.")
+                return redirect(url_for('routes.devices'))
+            else:
+                await flash('Invalid username or password')
+                current_app.logger.info(f"Failed login with {username}")
 
-    return render_template("login.html")
+    return await render_template("login.html")
 
 @routes.route('/logout')
 @login_required
-def logout():
-    current_app.logger.info(f"User {current_user.username} logged out.")
+async def logout():
+    current_app.logger.info(f"User {current_user.auth_id} logged out.")
     logout_user()
     flash('You have been logged out.')
     return redirect(url_for('routes.login'))
 
 @routes.route('/devices')
 @login_required
-def devices():
-    devices = Device.query.all()
-    return render_template("devices.html", devices=devices)
+async def devices():
+    async with AsyncSessionLocal() as session:
+        result = await session.execute(select(Device))
+        devices = result.scalars().all()
+    return await render_template("devices.html", devices=devices)
 
 @routes.route('/devices/<int:id>')
 @login_required
-def single_device(id):
-    device = Device.query.get_or_404(id)
-    if device.geo_location:
-        device.country, device.city = get_location_from_coordinates(device.geo_location)
-    else:
-        device.address = "Location not available"
-    return render_template("single-device.html", device=device)
+async def single_device(id):
+    async with AsyncSessionLocal() as session:
+        device = await session.get(Device, id)
+        if device.geo_location:
+            device.country, device.city = get_location_from_coordinates(device.geo_location)
+        else:
+            device.address = "Location not available"
+    return await render_template("single-device.html", device=device)
 
 @routes.route('/device/<int:id>/delete', methods=['POST'])
 @login_required
-def post_delete_device(id):
-    device = Device.query.get_or_404(id)
-    db.session.delete(device)
-    db.session.commit()
-    current_app.logger.info(f"User {current_user.username} deleted device {device.device_name}.")
-    flash(f"Device {device.device_name} deleted successfully!")
+async def post_delete_device(id):
+    async with AsyncSessionLocal() as session:
+        device = await session.get(Device, id)
+        await session.delete(device)
+        await session.commit()
+        current_app.logger.info(f"User {current_user.auth_id} deleted device {device.device_name}.")
+        await flash(f"Device {device.device_name} deleted successfully!")
     return redirect(url_for('routes.devices'))
 
 @routes.route('/logs')
 @login_required
-def view_logs():
+async def view_logs():
     try:
-        with open('logs/server.log', 'r') as log_file:
-            logs = log_file.readlines()
-        return render_template('logs.html', logs=logs)
+        async with aiofiles.open('logs/server.log', 'r') as log_file:
+            logs = await log_file.readlines()
+        return await render_template('logs.html', logs=logs)
     except Exception as e:
-        flash(f"Could not open log file: {str(e)}", 'error')
+        await flash(f"Could not open log file: {str(e)}", 'error')
         return redirect(url_for('routes.main'))
 
+@routes.websocket('/ws/logs')
+async def ws_logs():
+    log_connections.add(websocket._get_current_object())
+    try:
+        while True:
+            await asyncio.sleep(1)
+            async with aiofiles.open('logs/server.log', 'r') as log_file:
+                logs = await log_file.readlines()
+                await websocket.send_json({"logs": logs})
+    except Exception as e:
+        current_app.logger.error(f"WebSocket error: {str(e)}")
+    finally:
+        log_connections.remove(websocket._get_current_object())
 
 @routes.route('/device', methods=['POST'])
-def api_add_device():
+async def api_add_device():
     try:
-        data = request.json
-        existing_device = Device.query.filter_by(hardware_id=data['hardware_id']).first()
-        if existing_device:
-            return jsonify({"error": "A device with this hardware ID already exists."}), 400
+        data = await request.json
+        async with AsyncSessionLocal() as session:
+            result = await session.execute(select(Device).filter_by(hardware_id=data['hardware_id']))
+            existing_device = result.scalars().first()
 
-        new_device = Device(
-            device_name=data['device_name'],
-            os_version=data['os_version'],
-            hardware_id=data['hardware_id'],
-            geo_location=data.get('geo_location'),
-            installed_apps=','.join(data.get('installed_apps', []))
-        )
-        current_app.logger.info(f"New device: {new_device.device_name} added to database.")
-        db.session.add(new_device)
-        db.session.commit()
+            if existing_device:
+                return jsonify({"error": "A device with this hardware ID already exists."}), 400
 
-        return jsonify({"message": "Device added successfully."}), 201
+            new_device = Device(
+                device_name=data['device_name'],
+                os_version=data['os_version'],
+                hardware_id=data['hardware_id'],
+                geo_location=data.get('geo_location'),
+                installed_apps=','.join(data.get('installed_apps', []))
+            )
+            current_app.logger.info(f"New device: {new_device.device_name} added to database.")
+            session.add(new_device)
+            await session.commit()
+
+            return jsonify({"message": "Device added successfully."}), 201
 
     except Exception as e:
-        db.session.rollback()
         return jsonify({"error": f"An error occurred: {str(e)}"}), 400
 
-
-@routes.route('/device/<int:id>', methods=['DELETE'])
-def api_delete_device(id):
-    device = Device.query.get_or_404(id)
-    db.session.delete(device)
-    db.session.commit()
-    current_app.logger.info(f"Device {device.device_name} deleted from database with api call.")
-    return jsonify({"message": f"Device {id} deleted successfully!"}), 200
-
-@routes.route('/device/<int:id>', methods=['GET'])
-def api_get_device(id):
-    device = Device.query.get_or_404(id)
-    return jsonify({
-        'device_name': device.device_name,
-        'os_version': device.os_version,
-        'timestamp': device.timestamp
-    }), 200
-
 @routes.route('/device/heartbeat', methods=['POST'])
-def api_device_heartbeat():
+async def api_device_heartbeat():
     try:
-        data = request.json
+        data = await request.json
         hardware_id = data.get('hardware_id')
 
         if not hardware_id:
             return jsonify({"error": "Hardware ID is required"}), 400
 
-        device = Device.query.filter_by(hardware_id=hardware_id).first()
-        if not device:
-            current_app.logger.info(f"Recived hearbeat from unknown device.")
-            return jsonify({"error": "Device not found"}), 404
+        async with AsyncSessionLocal() as session:
+            result = await session.execute(select(Device).filter_by(hardware_id=hardware_id))
+            device = result.scalars().first()
 
-        device.last_heartbeat = db.func.current_timestamp()
-        db.session.commit()
-        current_app.logger.info(f"Recived hearbeat from {device.device_name}.")
+            if not device:
+                current_app.logger.info(f"Received heartbeat from unknown device.")
+                return jsonify({"error": "Device not found"}), 404
 
-        return jsonify({"message": f"Heartbeat for device {device.device_name} received!"}), 200
+            device.last_heartbeat = func.current_timestamp()
+            await session.commit()
+
+            current_app.logger.info(f"Received heartbeat from {device.device_name}.")
+            return jsonify({"message": f"Heartbeat for device {device.device_name} received!"}), 200
 
     except Exception as e:
+        current_app.logger.error(f"An error occurred: {str(e)}")
         return jsonify({"error": f"An error occurred: {str(e)}"}), 500
 
+@routes.errorhandler(Unauthorized)
+async def redirect_to_login(*_):
+    return redirect(url_for("routes.login"))
 
 @routes.route('/ping', methods=['GET'])
-def ping():
+async def ping():
     current_app.logger.info(f"Server was pinged.")
     return jsonify({"message": "Server is running"}), 200

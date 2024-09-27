@@ -1,24 +1,18 @@
 import os
 import logging
-from flask import Flask
-from flask_login import LoginManager
-from models import db, User
+from quart import Quart
+from quart_auth import QuartAuth
+from sqlalchemy.future import select
+from sqlalchemy.ext.asyncio import AsyncSession
+from models import async_engine, Base, AsyncSession, User
 from config import Config
 from routes import routes
 
-app = Flask(__name__)
+app = Quart(__name__)
 app.config.from_object(Config)
-db.init_app(app)
 
-login_manager = LoginManager()
-login_manager.init_app(app)
-login_manager.login_view = 'routes.login'
+auth_manager = QuartAuth(app)
 
-@login_manager.user_loader
-def load_user(user_id):
-    return User.query.filter_by(id=int(user_id)).first()
-
-app.register_blueprint(routes)
 
 if not os.path.exists('logs'):
     os.makedirs('logs')
@@ -38,8 +32,25 @@ console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s
 console_handler.setFormatter(console_formatter)
 logger.addHandler(console_handler)
 
-with app.app_context():
-    db.create_all()
+async def init_db():
+    async with async_engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+
+@app.before_serving
+async def startup():
+    await init_db()
+
+app.register_blueprint(routes)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    import asyncio
+    import hypercorn.asyncio
+    from hypercorn.config import Config as HyperConfig
+
+    async def run():
+        config = HyperConfig()
+        config.bind = ["0.0.0.0:5000"]
+        
+        await hypercorn.asyncio.serve(app, config)
+
+    asyncio.run(run())

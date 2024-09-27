@@ -1,29 +1,48 @@
 from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import UserMixin
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
+from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy import Column, Integer, String, Text, DateTime, func
 from flask_bcrypt import Bcrypt
+from flask_login import UserMixin
 
-db = SQLAlchemy()
+# Initialize bcrypt for password hashing
 bcrypt = Bcrypt()
 
-class Device(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    hardware_id = db.Column(db.String(200), nullable=False, index=True, unique=True)
-    device_name = db.Column(db.String(50), nullable=False)
-    os_version = db.Column(db.String(100), nullable=False)
-    geo_location = db.Column(db.String(100))
-    installed_apps = db.Column(db.Text)
-    timestamp = db.Column(db.DateTime, default=db.func.current_timestamp())
-    last_heartbeat = db.Column(db.DateTime)
+# Define the base class for models
+Base = declarative_base()
+
+# Async engine setup for SQLite using aiosqlite
+DATABASE_URL = "sqlite+aiosqlite:///sqlite.db"
+async_engine = create_async_engine(DATABASE_URL, echo=True)
+
+# Async session maker
+AsyncSessionLocal = sessionmaker(bind=async_engine, class_=AsyncSession, expire_on_commit=False)
+
+# Device model
+class Device(Base):
+    __tablename__ = 'devices'
+
+    id = Column(Integer, primary_key=True)
+    hardware_id = Column(String(200), nullable=False, index=True, unique=True)
+    device_name = Column(String(50), nullable=False)
+    os_version = Column(String(100), nullable=False)
+    geo_location = Column(String(100))
+    installed_apps = Column(Text)
+    timestamp = Column(DateTime, default=func.current_timestamp())
+    last_heartbeat = Column(DateTime)
 
     def __repr__(self):
         return f"<Device {self.device_name}>"
 
-class User(db.Model, UserMixin):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(150), unique=True, nullable=False)
-    password_hash = db.Column(db.String(150), nullable=False)
+# User model with UserMixin for authentication
+class User(Base, UserMixin):
+    __tablename__ = 'users'
 
+    id = Column(Integer, primary_key=True)
+    username = Column(String(150), unique=True, nullable=False)
+    password_hash = Column(String(150), nullable=False)
+
+    # Password management methods
     def set_password(self, password):
         self.password_hash = bcrypt.generate_password_hash(password).decode('utf-8')
 
