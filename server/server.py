@@ -17,6 +17,7 @@ auth_manager = QuartAuth(app)
 if not os.path.exists('logs'):
     os.makedirs('logs')
 
+# verify/check if logging is async!!!!
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 

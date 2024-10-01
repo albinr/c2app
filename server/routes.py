@@ -18,6 +18,9 @@ async def main():
 
 @routes.route('/signup', methods=['GET', 'POST'])
 async def signup():
+    """
+    Verify async!!!
+    """
     async with AsyncSessionLocal() as session:
         if request.method == 'POST':
             form_data = await request.form
@@ -43,6 +46,9 @@ async def signup():
 
 @routes.route('/login', methods=['GET', 'POST'])
 async def login():
+    """
+    Verify async!!!
+    """
     async with AsyncSessionLocal() as session:
         if request.method == 'POST':
             form_data = await request.form

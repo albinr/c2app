@@ -5,20 +5,15 @@ from sqlalchemy import Column, Integer, String, Text, DateTime, func
 from flask_bcrypt import Bcrypt
 from flask_login import UserMixin
 
-# Initialize bcrypt for password hashing
 bcrypt = Bcrypt()
 
-# Define the base class for models
 Base = declarative_base()
 
-# Async engine setup for SQLite using aiosqlite
 DATABASE_URL = "sqlite+aiosqlite:///sqlite.db"
 async_engine = create_async_engine(DATABASE_URL, echo=True)
 
-# Async session maker
 AsyncSessionLocal = sessionmaker(bind=async_engine, class_=AsyncSession, expire_on_commit=False)
 
-# Device model
 class Device(Base):
     __tablename__ = 'devices'
 
@@ -34,7 +29,6 @@ class Device(Base):
     def __repr__(self):
         return f"<Device {self.device_name}>"
 
-# User model with UserMixin for authentication
 class User(Base, UserMixin):
     __tablename__ = 'users'
 
@@ -42,7 +36,6 @@ class User(Base, UserMixin):
     username = Column(String(150), unique=True, nullable=False)
     password_hash = Column(String(150), nullable=False)
 
-    # Password management methods
     def set_password(self, password):
         self.password_hash = bcrypt.generate_password_hash(password).decode('utf-8')
 

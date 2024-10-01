@@ -1062,3 +1062,937 @@ WHERE users.username = ?
 FROM devices
 2024-09-28 01:17:10,739 - INFO - [generated in 0.00042s] ()
 2024-09-28 01:17:10,743 - INFO - ROLLBACK
+2024-09-28 11:08:28,080 - INFO - BEGIN (implicit)
+2024-09-28 11:08:28,081 - INFO - PRAGMA main.table_info("devices")
+2024-09-28 11:08:28,081 - INFO - [raw sql] ()
+2024-09-28 11:08:28,085 - INFO - PRAGMA main.table_info("users")
+2024-09-28 11:08:28,085 - INFO - [raw sql] ()
+2024-09-28 11:08:28,087 - INFO - COMMIT
+2024-09-28 11:08:28,089 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-09-28 11:08:43,469 - INFO - BEGIN (implicit)
+2024-09-28 11:08:43,472 - INFO - SELECT users.id, users.username, users.password_hash 
+FROM users 
+WHERE users.username = ?
+2024-09-28 11:08:43,473 - INFO - [generated in 0.00048s] ('admin',)
+2024-09-28 11:08:43,737 - INFO - User admin logged in.
+2024-09-28 11:08:43,738 - INFO - ROLLBACK
+2024-09-28 11:08:43,751 - INFO - BEGIN (implicit)
+2024-09-28 11:08:43,752 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-28 11:08:43,753 - INFO - [generated in 0.00028s] ()
+2024-09-28 11:08:43,755 - INFO - ROLLBACK
+2024-09-28 11:09:00,956 - INFO - BEGIN (implicit)
+2024-09-28 11:09:00,956 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-28 11:09:00,956 - INFO - [cached since 17.21s ago] ()
+2024-09-28 11:09:00,958 - INFO - ROLLBACK
+2024-09-28 11:09:14,176 - INFO - BEGIN (implicit)
+2024-09-28 11:09:14,177 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-28 11:09:14,177 - INFO - [cached since 30.43s ago] ()
+2024-09-28 11:09:14,179 - INFO - ROLLBACK
+2024-09-29 18:01:15,220 - INFO - BEGIN (implicit)
+2024-09-29 18:01:15,222 - INFO - PRAGMA main.table_info("devices")
+2024-09-29 18:01:15,223 - INFO - [raw sql] ()
+2024-09-29 18:01:15,224 - INFO - PRAGMA main.table_info("users")
+2024-09-29 18:01:15,224 - INFO - [raw sql] ()
+2024-09-29 18:01:15,225 - INFO - COMMIT
+2024-09-29 18:01:15,227 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-09-29 18:02:16,552 - INFO - BEGIN (implicit)
+2024-09-29 18:02:16,556 - INFO - SELECT users.id, users.username, users.password_hash 
+FROM users 
+WHERE users.username = ?
+2024-09-29 18:02:16,556 - INFO - [generated in 0.00034s] ('admin',)
+2024-09-29 18:02:16,800 - INFO - User admin logged in.
+2024-09-29 18:02:16,801 - INFO - ROLLBACK
+2024-09-29 18:02:16,816 - INFO - BEGIN (implicit)
+2024-09-29 18:02:16,817 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:02:16,817 - INFO - [generated in 0.00023s] ()
+2024-09-29 18:02:16,818 - INFO - ROLLBACK
+2024-09-29 18:02:23,284 - INFO - BEGIN (implicit)
+2024-09-29 18:02:23,285 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-29 18:02:23,285 - INFO - [generated in 0.00031s] (3,)
+2024-09-29 18:02:23,288 - INFO - DELETE FROM devices WHERE devices.id = ?
+2024-09-29 18:02:23,289 - INFO - [generated in 0.00039s] (3,)
+2024-09-29 18:02:23,290 - INFO - COMMIT
+2024-09-29 18:02:23,300 - INFO - User 1 deleted device albinxps.
+2024-09-29 18:02:23,309 - INFO - BEGIN (implicit)
+2024-09-29 18:02:23,309 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:02:23,309 - INFO - [cached since 6.492s ago] ()
+2024-09-29 18:02:23,311 - INFO - ROLLBACK
+2024-09-29 18:02:49,135 - INFO - BEGIN (implicit)
+2024-09-29 18:02:49,135 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:02:49,136 - INFO - [cached since 32.32s ago] ()
+2024-09-29 18:02:49,139 - INFO - ROLLBACK
+2024-09-29 18:04:44,272 - INFO - BEGIN (implicit)
+2024-09-29 18:04:44,273 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:04:44,273 - INFO - [generated in 0.00029s] ('dfkljoijslkdjoe',)
+2024-09-29 18:04:44,274 - INFO - New device: Laptop added to database.
+2024-09-29 18:04:44,276 - INFO - INSERT INTO devices (hardware_id, device_name, os_version, geo_location, installed_apps, timestamp, last_heartbeat) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?) RETURNING id, timestamp
+2024-09-29 18:04:44,276 - INFO - [generated in 0.00032s] ('dfkljoijslkdjoe', 'Laptop', 'Test os 11', '59.3293,18.0686', 'Google Chrome,Microsoft Word,Python 3.9,Slack', None)
+2024-09-29 18:04:44,278 - INFO - COMMIT
+2024-09-29 18:04:58,600 - INFO - BEGIN (implicit)
+2024-09-29 18:04:58,601 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:04:58,602 - INFO - [cached since 14.33s ago] ('fghfghljlkj',)
+2024-09-29 18:04:58,604 - INFO - New device: PC added to database.
+2024-09-29 18:04:58,604 - INFO - INSERT INTO devices (hardware_id, device_name, os_version, geo_location, installed_apps, timestamp, last_heartbeat) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?) RETURNING id, timestamp
+2024-09-29 18:04:58,604 - INFO - [cached since 14.33s ago] ('fghfghljlkj', 'PC', 'Test os 11', '59.3293,18.0686', 'Google Chrome,Microsoft Word,Python 3.9,Slack', None)
+2024-09-29 18:04:58,607 - INFO - COMMIT
+2024-09-29 18:05:15,017 - INFO - BEGIN (implicit)
+2024-09-29 18:05:15,018 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:05:15,019 - INFO - [cached since 30.75s ago] ('dfgdfgdfglkljoij',)
+2024-09-29 18:05:15,022 - INFO - New device: Phone added to database.
+2024-09-29 18:05:15,022 - INFO - INSERT INTO devices (hardware_id, device_name, os_version, geo_location, installed_apps, timestamp, last_heartbeat) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?) RETURNING id, timestamp
+2024-09-29 18:05:15,023 - INFO - [cached since 30.75s ago] ('dfgdfgdfglkljoij', 'Phone', 'Test os 11', '59.3293,18.0686', 'Google Chrome,Microsoft Word,Python 3.9,Slack', None)
+2024-09-29 18:05:15,025 - INFO - COMMIT
+2024-09-29 18:05:17,010 - INFO - BEGIN (implicit)
+2024-09-29 18:05:17,011 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:05:17,011 - INFO - [cached since 180.2s ago] ()
+2024-09-29 18:05:17,014 - INFO - ROLLBACK
+2024-09-29 18:11:33,283 - INFO - BEGIN (implicit)
+2024-09-29 18:11:33,284 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:11:33,284 - INFO - [cached since 556.5s ago] ()
+2024-09-29 18:11:33,287 - INFO - ROLLBACK
+2024-09-29 18:11:35,648 - INFO - BEGIN (implicit)
+2024-09-29 18:11:35,649 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-29 18:11:35,649 - INFO - [cached since 552.4s ago] (1,)
+2024-09-29 18:11:35,857 - INFO - ROLLBACK
+2024-09-29 18:30:16,433 - INFO - BEGIN (implicit)
+2024-09-29 18:30:16,433 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:30:16,434 - INFO - [cached since 1680s ago] ()
+2024-09-29 18:30:16,436 - INFO - ROLLBACK
+2024-09-29 18:37:00,219 - INFO - BEGIN (implicit)
+2024-09-29 18:37:00,220 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:37:00,220 - INFO - [cached since 2083s ago] ()
+2024-09-29 18:37:00,225 - INFO - ROLLBACK
+2024-09-29 18:37:09,951 - INFO - BEGIN (implicit)
+2024-09-29 18:37:09,952 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:37:09,952 - INFO - [cached since 2093s ago] ()
+2024-09-29 18:37:09,955 - INFO - ROLLBACK
+2024-09-29 18:37:24,690 - INFO - BEGIN (implicit)
+2024-09-29 18:37:24,690 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:37:24,691 - INFO - [cached since 2108s ago] ()
+2024-09-29 18:37:24,693 - INFO - ROLLBACK
+2024-09-29 18:43:32,737 - INFO - User 1 logged out.
+2024-09-29 18:43:56,710 - INFO - Server was pinged.
+2024-09-29 18:43:56,715 - INFO - BEGIN (implicit)
+2024-09-29 18:43:56,715 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:43:56,715 - INFO - [cached since 2352s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:43:56,717 - INFO - Received heartbeat from unknown device.
+2024-09-29 18:43:56,717 - INFO - ROLLBACK
+2024-09-29 18:44:06,713 - INFO - Server was pinged.
+2024-09-29 18:44:06,722 - INFO - BEGIN (implicit)
+2024-09-29 18:44:06,723 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:44:06,723 - INFO - [cached since 2362s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:44:06,725 - INFO - Received heartbeat from unknown device.
+2024-09-29 18:44:06,725 - INFO - ROLLBACK
+2024-09-29 18:44:15,365 - INFO - BEGIN (implicit)
+2024-09-29 18:44:15,366 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:44:15,367 - INFO - [cached since 2371s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:44:15,370 - INFO - New device: albinxps added to database.
+2024-09-29 18:44:15,371 - INFO - INSERT INTO devices (hardware_id, device_name, os_version, geo_location, installed_apps, timestamp, last_heartbeat) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?) RETURNING id, timestamp
+2024-09-29 18:44:15,372 - INFO - [cached since 2371s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e', 'albinxps', 'Linux 5.15.153.1-microsoft-standard-WSL2', '59.3293,18.0686', '', None)
+2024-09-29 18:44:15,375 - INFO - COMMIT
+2024-09-29 18:44:16,723 - INFO - Server was pinged.
+2024-09-29 18:44:16,740 - INFO - BEGIN (implicit)
+2024-09-29 18:44:16,741 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:44:16,742 - INFO - [cached since 2372s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:44:16,748 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:44:16,749 - INFO - [generated in 0.00046s] (5,)
+2024-09-29 18:44:16,751 - INFO - COMMIT
+2024-09-29 18:44:16,766 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:44:22,727 - INFO - Server was pinged.
+2024-09-29 18:44:26,729 - INFO - Server was pinged.
+2024-09-29 18:44:26,772 - INFO - BEGIN (implicit)
+2024-09-29 18:44:26,773 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:44:26,773 - INFO - [cached since 2383s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:44:26,775 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:44:26,775 - INFO - [cached since 10.03s ago] (5,)
+2024-09-29 18:44:26,777 - INFO - COMMIT
+2024-09-29 18:44:26,789 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:44:29,331 - INFO - BEGIN (implicit)
+2024-09-29 18:44:29,332 - INFO - SELECT users.id, users.username, users.password_hash 
+FROM users 
+WHERE users.username = ?
+2024-09-29 18:44:29,333 - INFO - [cached since 2533s ago] ('admin',)
+2024-09-29 18:44:29,581 - INFO - User admin logged in.
+2024-09-29 18:44:29,581 - INFO - ROLLBACK
+2024-09-29 18:44:29,591 - INFO - BEGIN (implicit)
+2024-09-29 18:44:29,592 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:44:29,592 - INFO - [cached since 2533s ago] ()
+2024-09-29 18:44:29,593 - INFO - ROLLBACK
+2024-09-29 18:44:32,741 - INFO - Server was pinged.
+2024-09-29 18:44:36,738 - INFO - Server was pinged.
+2024-09-29 18:44:36,800 - INFO - BEGIN (implicit)
+2024-09-29 18:44:36,801 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:44:36,802 - INFO - [cached since 2393s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:44:36,807 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:44:36,807 - INFO - [cached since 20.06s ago] (5,)
+2024-09-29 18:44:36,811 - INFO - COMMIT
+2024-09-29 18:44:36,825 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:44:42,747 - INFO - Server was pinged.
+2024-09-29 18:44:46,750 - INFO - Server was pinged.
+2024-09-29 18:44:46,837 - INFO - BEGIN (implicit)
+2024-09-29 18:44:46,838 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:44:46,838 - INFO - [cached since 2403s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:44:46,840 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:44:46,840 - INFO - [cached since 30.09s ago] (5,)
+2024-09-29 18:44:46,842 - INFO - COMMIT
+2024-09-29 18:44:46,854 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:44:52,753 - INFO - Server was pinged.
+2024-09-29 18:44:56,756 - INFO - Server was pinged.
+2024-09-29 18:44:56,859 - INFO - BEGIN (implicit)
+2024-09-29 18:44:56,859 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:44:56,859 - INFO - [cached since 2413s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:44:56,862 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:44:56,862 - INFO - [cached since 40.11s ago] (5,)
+2024-09-29 18:44:56,863 - INFO - COMMIT
+2024-09-29 18:44:56,875 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:45:02,758 - INFO - Server was pinged.
+2024-09-29 18:45:06,760 - INFO - Server was pinged.
+2024-09-29 18:45:06,890 - INFO - BEGIN (implicit)
+2024-09-29 18:45:06,892 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:45:06,893 - INFO - [cached since 2423s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:45:06,897 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:45:06,898 - INFO - [cached since 50.15s ago] (5,)
+2024-09-29 18:45:06,901 - INFO - COMMIT
+2024-09-29 18:45:06,917 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:45:12,762 - INFO - Server was pinged.
+2024-09-29 18:45:16,764 - INFO - Server was pinged.
+2024-09-29 18:45:16,924 - INFO - BEGIN (implicit)
+2024-09-29 18:45:16,924 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:45:16,924 - INFO - [cached since 2433s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:45:16,927 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:45:16,927 - INFO - [cached since 60.18s ago] (5,)
+2024-09-29 18:45:16,928 - INFO - COMMIT
+2024-09-29 18:45:16,939 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:45:22,767 - INFO - Server was pinged.
+2024-09-29 18:45:26,767 - INFO - Server was pinged.
+2024-09-29 18:45:26,944 - INFO - BEGIN (implicit)
+2024-09-29 18:45:26,945 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:45:26,945 - INFO - [cached since 2443s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:45:26,947 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:45:26,947 - INFO - [cached since 70.2s ago] (5,)
+2024-09-29 18:45:26,948 - INFO - COMMIT
+2024-09-29 18:45:26,960 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:45:32,776 - INFO - Server was pinged.
+2024-09-29 18:45:36,772 - INFO - Server was pinged.
+2024-09-29 18:45:36,966 - INFO - BEGIN (implicit)
+2024-09-29 18:45:36,966 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:45:36,966 - INFO - [cached since 2453s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:45:36,969 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:45:36,969 - INFO - [cached since 80.22s ago] (5,)
+2024-09-29 18:45:36,970 - INFO - COMMIT
+2024-09-29 18:45:36,991 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:45:42,787 - INFO - Server was pinged.
+2024-09-29 18:45:48,309 - INFO - Server was pinged.
+2024-09-29 18:45:48,323 - INFO - BEGIN (implicit)
+2024-09-29 18:45:48,324 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:45:48,324 - INFO - [cached since 2464s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:45:48,328 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:45:48,328 - INFO - [cached since 91.58s ago] (5,)
+2024-09-29 18:45:48,331 - INFO - COMMIT
+2024-09-29 18:45:48,344 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:45:58,317 - INFO - Server was pinged.
+2024-09-29 18:45:58,353 - INFO - BEGIN (implicit)
+2024-09-29 18:45:58,354 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:45:58,354 - INFO - [cached since 2474s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:45:58,358 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:45:58,358 - INFO - [cached since 101.6s ago] (5,)
+2024-09-29 18:45:58,360 - INFO - COMMIT
+2024-09-29 18:45:58,374 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:46:08,321 - INFO - Server was pinged.
+2024-09-29 18:46:08,380 - INFO - BEGIN (implicit)
+2024-09-29 18:46:08,380 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:46:08,380 - INFO - [cached since 2484s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:46:08,382 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:46:08,382 - INFO - [cached since 111.6s ago] (5,)
+2024-09-29 18:46:08,383 - INFO - COMMIT
+2024-09-29 18:46:08,396 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:46:18,327 - INFO - Server was pinged.
+2024-09-29 18:46:18,406 - INFO - BEGIN (implicit)
+2024-09-29 18:46:18,407 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:46:18,407 - INFO - [cached since 2494s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:46:18,413 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:46:18,415 - INFO - [cached since 121.7s ago] (5,)
+2024-09-29 18:46:18,418 - INFO - COMMIT
+2024-09-29 18:46:18,431 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:46:28,331 - INFO - Server was pinged.
+2024-09-29 18:46:28,437 - INFO - BEGIN (implicit)
+2024-09-29 18:46:28,437 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:46:28,437 - INFO - [cached since 2504s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:46:28,439 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:46:28,440 - INFO - [cached since 131.7s ago] (5,)
+2024-09-29 18:46:28,441 - INFO - COMMIT
+2024-09-29 18:46:28,452 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:46:38,341 - INFO - Server was pinged.
+2024-09-29 18:46:38,458 - INFO - BEGIN (implicit)
+2024-09-29 18:46:38,459 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:46:38,459 - INFO - [cached since 2514s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:46:38,462 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:46:38,462 - INFO - [cached since 141.7s ago] (5,)
+2024-09-29 18:46:38,463 - INFO - COMMIT
+2024-09-29 18:46:38,472 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:46:48,347 - INFO - Server was pinged.
+2024-09-29 18:46:48,482 - INFO - BEGIN (implicit)
+2024-09-29 18:46:48,483 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:46:48,483 - INFO - [cached since 2524s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:46:48,488 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:46:48,488 - INFO - [cached since 151.7s ago] (5,)
+2024-09-29 18:46:48,491 - INFO - COMMIT
+2024-09-29 18:46:48,506 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:46:54,545 - INFO - Server was pinged.
+2024-09-29 18:46:54,558 - INFO - BEGIN (implicit)
+2024-09-29 18:46:54,559 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:46:54,559 - INFO - [cached since 2530s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:46:54,562 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:46:54,563 - INFO - [cached since 157.8s ago] (5,)
+2024-09-29 18:46:54,565 - INFO - COMMIT
+2024-09-29 18:46:54,579 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:47:04,552 - INFO - Server was pinged.
+2024-09-29 18:47:04,585 - INFO - BEGIN (implicit)
+2024-09-29 18:47:04,586 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:47:04,586 - INFO - [cached since 2540s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:47:04,588 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:47:04,589 - INFO - [cached since 167.8s ago] (5,)
+2024-09-29 18:47:04,590 - INFO - COMMIT
+2024-09-29 18:47:04,601 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:47:14,557 - INFO - Server was pinged.
+2024-09-29 18:47:14,608 - INFO - BEGIN (implicit)
+2024-09-29 18:47:14,609 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:47:14,609 - INFO - [cached since 2550s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:47:14,612 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:47:14,612 - INFO - [cached since 177.9s ago] (5,)
+2024-09-29 18:47:14,614 - INFO - COMMIT
+2024-09-29 18:47:14,627 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:47:24,560 - INFO - Server was pinged.
+2024-09-29 18:47:24,633 - INFO - BEGIN (implicit)
+2024-09-29 18:47:24,634 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:47:24,634 - INFO - [cached since 2560s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:47:24,636 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:47:24,636 - INFO - [cached since 187.9s ago] (5,)
+2024-09-29 18:47:24,637 - INFO - COMMIT
+2024-09-29 18:47:24,649 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:47:34,565 - INFO - Server was pinged.
+2024-09-29 18:47:34,660 - INFO - BEGIN (implicit)
+2024-09-29 18:47:34,660 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:47:34,661 - INFO - [cached since 2570s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:47:34,668 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:47:34,668 - INFO - [cached since 197.9s ago] (5,)
+2024-09-29 18:47:34,671 - INFO - COMMIT
+2024-09-29 18:47:34,683 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:47:44,577 - INFO - Server was pinged.
+2024-09-29 18:47:44,694 - INFO - BEGIN (implicit)
+2024-09-29 18:47:44,694 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:47:44,695 - INFO - [cached since 2580s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:47:44,699 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:47:44,700 - INFO - [cached since 208s ago] (5,)
+2024-09-29 18:47:44,702 - INFO - COMMIT
+2024-09-29 18:47:44,715 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:47:54,584 - INFO - Server was pinged.
+2024-09-29 18:47:54,720 - INFO - BEGIN (implicit)
+2024-09-29 18:47:54,721 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:47:54,721 - INFO - [cached since 2590s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:47:54,723 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:47:54,723 - INFO - [cached since 218s ago] (5,)
+2024-09-29 18:47:54,725 - INFO - COMMIT
+2024-09-29 18:47:54,737 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:48:08,715 - INFO - Server was pinged.
+2024-09-29 18:48:08,727 - INFO - BEGIN (implicit)
+2024-09-29 18:48:08,728 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:48:08,729 - INFO - [cached since 2604s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:48:08,732 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:48:08,733 - INFO - [cached since 232s ago] (5,)
+2024-09-29 18:48:08,734 - INFO - COMMIT
+2024-09-29 18:48:08,747 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:48:18,728 - INFO - Server was pinged.
+2024-09-29 18:48:18,762 - INFO - BEGIN (implicit)
+2024-09-29 18:48:18,763 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:48:18,764 - INFO - [cached since 2614s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:48:18,768 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:48:18,768 - INFO - [cached since 242s ago] (5,)
+2024-09-29 18:48:18,770 - INFO - COMMIT
+2024-09-29 18:48:18,784 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:48:28,737 - INFO - Server was pinged.
+2024-09-29 18:48:28,790 - INFO - BEGIN (implicit)
+2024-09-29 18:48:28,791 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:48:28,791 - INFO - [cached since 2625s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:48:28,794 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:48:28,794 - INFO - [cached since 252s ago] (5,)
+2024-09-29 18:48:28,795 - INFO - COMMIT
+2024-09-29 18:48:28,814 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:48:38,742 - INFO - Server was pinged.
+2024-09-29 18:48:38,820 - INFO - BEGIN (implicit)
+2024-09-29 18:48:38,820 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:48:38,821 - INFO - [cached since 2635s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:48:38,823 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:48:38,823 - INFO - [cached since 262.1s ago] (5,)
+2024-09-29 18:48:38,825 - INFO - COMMIT
+2024-09-29 18:48:38,836 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:48:48,748 - INFO - Server was pinged.
+2024-09-29 18:48:48,844 - INFO - BEGIN (implicit)
+2024-09-29 18:48:48,844 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:48:48,844 - INFO - [cached since 2645s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:48:48,846 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:48:48,846 - INFO - [cached since 272.1s ago] (5,)
+2024-09-29 18:48:48,848 - INFO - COMMIT
+2024-09-29 18:48:48,859 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:49:00,193 - INFO - Server was pinged.
+2024-09-29 18:49:00,205 - INFO - BEGIN (implicit)
+2024-09-29 18:49:00,206 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-29 18:49:00,206 - INFO - [cached since 2656s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-29 18:49:00,211 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-29 18:49:00,212 - INFO - [cached since 283.5s ago] (5,)
+2024-09-29 18:49:00,214 - INFO - COMMIT
+2024-09-29 18:49:00,229 - INFO - Received heartbeat from albinxps.
+2024-09-29 18:49:14,221 - INFO - BEGIN (implicit)
+2024-09-29 18:49:14,222 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:49:14,222 - INFO - [cached since 2817s ago] ()
+2024-09-29 18:49:14,225 - INFO - ROLLBACK
+2024-09-29 18:49:16,341 - INFO - BEGIN (implicit)
+2024-09-29 18:49:16,342 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-29 18:49:16,343 - INFO - [cached since 2813s ago] (5,)
+2024-09-29 18:49:16,345 - INFO - DELETE FROM devices WHERE devices.id = ?
+2024-09-29 18:49:16,345 - INFO - [cached since 2813s ago] (5,)
+2024-09-29 18:49:16,346 - INFO - COMMIT
+2024-09-29 18:49:16,358 - INFO - User 1 deleted device albinxps.
+2024-09-29 18:49:16,366 - INFO - BEGIN (implicit)
+2024-09-29 18:49:16,366 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-29 18:49:16,366 - INFO - [cached since 2820s ago] ()
+2024-09-29 18:49:16,368 - INFO - ROLLBACK
+2024-09-30 09:08:48,591 - INFO - BEGIN (implicit)
+2024-09-30 09:08:48,591 - INFO - PRAGMA main.table_info("devices")
+2024-09-30 09:08:48,591 - INFO - [raw sql] ()
+2024-09-30 09:08:48,593 - INFO - PRAGMA main.table_info("users")
+2024-09-30 09:08:48,593 - INFO - [raw sql] ()
+2024-09-30 09:08:48,595 - INFO - COMMIT
+2024-09-30 09:08:48,597 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-09-30 09:09:05,035 - INFO - BEGIN (implicit)
+2024-09-30 09:09:05,041 - INFO - SELECT users.id, users.username, users.password_hash 
+FROM users 
+WHERE users.username = ?
+2024-09-30 09:09:05,042 - INFO - [generated in 0.00082s] ('admin',)
+2024-09-30 09:09:05,344 - INFO - User admin logged in.
+2024-09-30 09:09:05,344 - INFO - ROLLBACK
+2024-09-30 09:09:05,356 - INFO - BEGIN (implicit)
+2024-09-30 09:09:05,359 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-30 09:09:05,360 - INFO - [generated in 0.00094s] ()
+2024-09-30 09:09:05,362 - INFO - ROLLBACK
+2024-09-30 09:09:18,755 - INFO - BEGIN (implicit)
+2024-09-30 09:09:18,763 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-30 09:09:18,764 - INFO - [generated in 0.00155s] (1,)
+2024-09-30 09:09:19,994 - INFO - ROLLBACK
+2024-09-30 09:09:45,831 - INFO - Server was pinged.
+2024-09-30 09:09:45,842 - INFO - BEGIN (implicit)
+2024-09-30 09:09:45,844 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:09:45,844 - INFO - [generated in 0.00064s] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:09:45,847 - INFO - Received heartbeat from unknown device.
+2024-09-30 09:09:45,848 - INFO - ROLLBACK
+2024-09-30 09:09:55,003 - INFO - BEGIN (implicit)
+2024-09-30 09:09:55,005 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:09:55,006 - INFO - [cached since 9.162s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:09:55,013 - INFO - New device: albinxps added to database.
+2024-09-30 09:09:55,021 - INFO - INSERT INTO devices (hardware_id, device_name, os_version, geo_location, installed_apps, timestamp, last_heartbeat) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?) RETURNING id, timestamp
+2024-09-30 09:09:55,022 - INFO - [generated in 0.00119s] ('55c97bf4-7bea-11ef-a011-efb03faa974e', 'albinxps', 'Linux 5.15.153.1-microsoft-standard-WSL2', '56.1616,15.5866', '', None)
+2024-09-30 09:09:55,030 - INFO - COMMIT
+2024-09-30 09:09:55,843 - INFO - Server was pinged.
+2024-09-30 09:09:55,860 - INFO - BEGIN (implicit)
+2024-09-30 09:09:55,861 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:09:55,861 - INFO - [cached since 10.02s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:09:55,867 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:09:55,868 - INFO - [generated in 0.00053s] (5,)
+2024-09-30 09:09:55,870 - INFO - COMMIT
+2024-09-30 09:09:55,892 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:10:05,857 - INFO - Server was pinged.
+2024-09-30 09:10:05,903 - INFO - BEGIN (implicit)
+2024-09-30 09:10:05,904 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:10:05,905 - INFO - [cached since 20.06s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:10:05,910 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:10:05,911 - INFO - [cached since 10.04s ago] (5,)
+2024-09-30 09:10:05,913 - INFO - COMMIT
+2024-09-30 09:10:05,928 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:10:06,954 - INFO - BEGIN (implicit)
+2024-09-30 09:10:06,955 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-30 09:10:06,957 - INFO - [cached since 61.6s ago] ()
+2024-09-30 09:10:06,964 - INFO - ROLLBACK
+2024-09-30 09:10:09,608 - INFO - BEGIN (implicit)
+2024-09-30 09:10:09,609 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-30 09:10:09,610 - INFO - [cached since 50.85s ago] (5,)
+2024-09-30 09:10:11,397 - INFO - ROLLBACK
+2024-09-30 09:10:15,867 - INFO - Server was pinged.
+2024-09-30 09:10:15,938 - INFO - BEGIN (implicit)
+2024-09-30 09:10:15,939 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:10:15,940 - INFO - [cached since 30.1s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:10:15,943 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:10:15,944 - INFO - [cached since 20.08s ago] (5,)
+2024-09-30 09:10:15,946 - INFO - COMMIT
+2024-09-30 09:10:15,962 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:10:17,553 - INFO - BEGIN (implicit)
+2024-09-30 09:10:17,555 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-30 09:10:17,556 - INFO - [cached since 58.79s ago] (4,)
+2024-09-30 09:10:17,566 - INFO - DELETE FROM devices WHERE devices.id = ?
+2024-09-30 09:10:17,567 - INFO - [generated in 0.00121s] (4,)
+2024-09-30 09:10:17,572 - INFO - COMMIT
+2024-09-30 09:10:17,597 - INFO - User 1 deleted device Phone.
+2024-09-30 09:10:17,628 - INFO - BEGIN (implicit)
+2024-09-30 09:10:17,629 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-30 09:10:17,630 - INFO - [cached since 72.27s ago] ()
+2024-09-30 09:10:17,637 - INFO - ROLLBACK
+2024-09-30 09:10:25,878 - INFO - Server was pinged.
+2024-09-30 09:10:25,985 - INFO - BEGIN (implicit)
+2024-09-30 09:10:25,987 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:10:25,988 - INFO - [cached since 40.14s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:10:25,997 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:10:25,998 - INFO - [cached since 30.13s ago] (5,)
+2024-09-30 09:10:26,003 - INFO - COMMIT
+2024-09-30 09:10:26,030 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:10:35,892 - INFO - Server was pinged.
+2024-09-30 09:10:36,045 - INFO - BEGIN (implicit)
+2024-09-30 09:10:36,047 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:10:36,047 - INFO - [cached since 50.2s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:10:36,051 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:10:36,052 - INFO - [cached since 40.18s ago] (5,)
+2024-09-30 09:10:36,055 - INFO - COMMIT
+2024-09-30 09:10:36,071 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:10:45,907 - INFO - Server was pinged.
+2024-09-30 09:10:46,082 - INFO - BEGIN (implicit)
+2024-09-30 09:10:46,083 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:10:46,083 - INFO - [cached since 60.24s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:10:46,087 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:10:46,087 - INFO - [cached since 50.22s ago] (5,)
+2024-09-30 09:10:46,090 - INFO - COMMIT
+2024-09-30 09:10:46,105 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:10:55,919 - INFO - Server was pinged.
+2024-09-30 09:10:56,116 - INFO - BEGIN (implicit)
+2024-09-30 09:10:56,117 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:10:56,117 - INFO - [cached since 70.27s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:10:56,122 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:10:56,122 - INFO - [cached since 60.26s ago] (5,)
+2024-09-30 09:10:56,125 - INFO - COMMIT
+2024-09-30 09:10:56,141 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:11:52,037 - INFO - Server was pinged.
+2024-09-30 09:11:52,056 - INFO - BEGIN (implicit)
+2024-09-30 09:11:52,058 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:11:52,061 - INFO - [cached since 76.46s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:11:52,069 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:11:52,070 - INFO - [cached since 66.45s ago] (5,)
+2024-09-30 09:11:52,078 - INFO - COMMIT
+2024-09-30 09:11:52,099 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:12:02,047 - INFO - Server was pinged.
+2024-09-30 09:12:02,119 - INFO - BEGIN (implicit)
+2024-09-30 09:12:02,121 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:12:02,122 - INFO - [cached since 86.52s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:12:02,130 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:12:02,131 - INFO - [cached since 76.51s ago] (5,)
+2024-09-30 09:12:02,138 - INFO - COMMIT
+2024-09-30 09:12:02,155 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:12:12,058 - INFO - Server was pinged.
+2024-09-30 09:12:12,167 - INFO - BEGIN (implicit)
+2024-09-30 09:12:12,168 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:12:12,168 - INFO - [cached since 96.57s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:12:12,173 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:12:12,173 - INFO - [cached since 86.55s ago] (5,)
+2024-09-30 09:12:12,175 - INFO - COMMIT
+2024-09-30 09:12:12,188 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:12:22,070 - INFO - Server was pinged.
+2024-09-30 09:12:22,204 - INFO - BEGIN (implicit)
+2024-09-30 09:12:22,206 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:12:22,206 - INFO - [cached since 106.6s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:12:22,214 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:12:22,215 - INFO - [cached since 96.59s ago] (5,)
+2024-09-30 09:12:22,221 - INFO - COMMIT
+2024-09-30 09:12:22,240 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:12:32,082 - INFO - Server was pinged.
+2024-09-30 09:12:32,257 - INFO - BEGIN (implicit)
+2024-09-30 09:12:32,259 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:12:32,259 - INFO - [cached since 116.7s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:12:32,266 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:12:32,267 - INFO - [cached since 106.6s ago] (5,)
+2024-09-30 09:12:32,272 - INFO - COMMIT
+2024-09-30 09:12:32,290 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:12:42,093 - INFO - Server was pinged.
+2024-09-30 09:12:42,307 - INFO - BEGIN (implicit)
+2024-09-30 09:12:42,309 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:12:42,310 - INFO - [cached since 126.7s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:12:42,318 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:12:42,319 - INFO - [cached since 116.7s ago] (5,)
+2024-09-30 09:12:42,324 - INFO - COMMIT
+2024-09-30 09:12:42,342 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:12:52,100 - INFO - Server was pinged.
+2024-09-30 09:12:52,352 - INFO - BEGIN (implicit)
+2024-09-30 09:12:52,353 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:12:52,354 - INFO - [cached since 136.8s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:12:52,358 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:12:52,358 - INFO - [cached since 126.7s ago] (5,)
+2024-09-30 09:12:52,361 - INFO - COMMIT
+2024-09-30 09:12:52,377 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:13:02,110 - INFO - Server was pinged.
+2024-09-30 09:13:02,394 - INFO - BEGIN (implicit)
+2024-09-30 09:13:02,396 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:13:02,397 - INFO - [cached since 146.8s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:13:02,404 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:13:02,405 - INFO - [cached since 136.8s ago] (5,)
+2024-09-30 09:13:02,412 - INFO - COMMIT
+2024-09-30 09:13:02,423 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:13:12,122 - INFO - Server was pinged.
+2024-09-30 09:13:12,431 - INFO - BEGIN (implicit)
+2024-09-30 09:13:12,432 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:13:12,432 - INFO - [cached since 156.8s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:13:12,434 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:13:12,434 - INFO - [cached since 146.8s ago] (5,)
+2024-09-30 09:13:12,436 - INFO - COMMIT
+2024-09-30 09:13:12,449 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:13:22,130 - INFO - Server was pinged.
+2024-09-30 09:13:22,459 - INFO - BEGIN (implicit)
+2024-09-30 09:13:22,460 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:13:22,460 - INFO - [cached since 166.9s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:13:22,463 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:13:22,464 - INFO - [cached since 156.8s ago] (5,)
+2024-09-30 09:13:22,465 - INFO - COMMIT
+2024-09-30 09:13:22,480 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:13:32,139 - INFO - Server was pinged.
+2024-09-30 09:13:32,496 - INFO - BEGIN (implicit)
+2024-09-30 09:13:32,497 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:13:32,498 - INFO - [cached since 176.9s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:13:32,507 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:13:32,508 - INFO - [cached since 166.9s ago] (5,)
+2024-09-30 09:13:32,513 - INFO - COMMIT
+2024-09-30 09:13:32,529 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:13:42,151 - INFO - Server was pinged.
+2024-09-30 09:13:42,543 - INFO - BEGIN (implicit)
+2024-09-30 09:13:42,545 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:13:42,546 - INFO - [cached since 186.9s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:13:42,552 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:13:42,553 - INFO - [cached since 176.9s ago] (5,)
+2024-09-30 09:13:42,558 - INFO - COMMIT
+2024-09-30 09:13:42,576 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:13:52,163 - INFO - Server was pinged.
+2024-09-30 09:13:52,593 - INFO - BEGIN (implicit)
+2024-09-30 09:13:52,595 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:13:52,596 - INFO - [cached since 197s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:13:52,604 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:13:52,605 - INFO - [cached since 187s ago] (5,)
+2024-09-30 09:13:52,610 - INFO - COMMIT
+2024-09-30 09:13:52,631 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:14:02,169 - INFO - Server was pinged.
+2024-09-30 09:14:02,643 - INFO - BEGIN (implicit)
+2024-09-30 09:14:02,644 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:14:02,645 - INFO - [cached since 207s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:14:02,651 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:14:02,651 - INFO - [cached since 197s ago] (5,)
+2024-09-30 09:14:02,654 - INFO - COMMIT
+2024-09-30 09:14:02,673 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:14:12,179 - INFO - Server was pinged.
+2024-09-30 09:14:12,683 - INFO - BEGIN (implicit)
+2024-09-30 09:14:12,683 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:14:12,683 - INFO - [cached since 217.1s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:14:12,687 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:14:12,687 - INFO - [cached since 207.1s ago] (5,)
+2024-09-30 09:14:12,688 - INFO - COMMIT
+2024-09-30 09:14:12,699 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:14:22,185 - INFO - Server was pinged.
+2024-09-30 09:14:22,708 - INFO - BEGIN (implicit)
+2024-09-30 09:14:22,709 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:14:22,709 - INFO - [cached since 227.1s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:14:22,713 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:14:22,713 - INFO - [cached since 217.1s ago] (5,)
+2024-09-30 09:14:22,715 - INFO - COMMIT
+2024-09-30 09:14:22,725 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:14:32,191 - INFO - Server was pinged.
+2024-09-30 09:14:32,736 - INFO - BEGIN (implicit)
+2024-09-30 09:14:32,737 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:14:32,737 - INFO - [cached since 237.1s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:14:32,743 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:14:32,743 - INFO - [cached since 227.1s ago] (5,)
+2024-09-30 09:14:32,746 - INFO - COMMIT
+2024-09-30 09:14:32,757 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:14:42,197 - INFO - Server was pinged.
+2024-09-30 09:14:42,773 - INFO - BEGIN (implicit)
+2024-09-30 09:14:42,775 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:14:42,776 - INFO - [cached since 247.2s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:14:42,785 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:14:42,786 - INFO - [cached since 237.2s ago] (5,)
+2024-09-30 09:14:42,791 - INFO - COMMIT
+2024-09-30 09:14:42,810 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:14:52,204 - INFO - Server was pinged.
+2024-09-30 09:14:52,820 - INFO - BEGIN (implicit)
+2024-09-30 09:14:52,821 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:14:52,822 - INFO - [cached since 257.2s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:14:52,825 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:14:52,826 - INFO - [cached since 247.2s ago] (5,)
+2024-09-30 09:14:52,828 - INFO - COMMIT
+2024-09-30 09:14:52,841 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:15:02,211 - INFO - Server was pinged.
+2024-09-30 09:15:02,851 - INFO - BEGIN (implicit)
+2024-09-30 09:15:02,852 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:15:02,852 - INFO - [cached since 267.3s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:15:02,857 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:15:02,857 - INFO - [cached since 257.2s ago] (5,)
+2024-09-30 09:15:02,860 - INFO - COMMIT
+2024-09-30 09:15:02,872 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:15:12,221 - INFO - Server was pinged.
+2024-09-30 09:15:12,878 - INFO - BEGIN (implicit)
+2024-09-30 09:15:12,879 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:15:12,879 - INFO - [cached since 277.3s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:15:12,882 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:15:12,883 - INFO - [cached since 267.3s ago] (5,)
+2024-09-30 09:15:12,884 - INFO - COMMIT
+2024-09-30 09:15:12,897 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:15:22,229 - INFO - Server was pinged.
+2024-09-30 09:15:22,908 - INFO - BEGIN (implicit)
+2024-09-30 09:15:22,909 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:15:22,910 - INFO - [cached since 287.3s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:15:22,914 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:15:22,914 - INFO - [cached since 277.3s ago] (5,)
+2024-09-30 09:15:22,916 - INFO - COMMIT
+2024-09-30 09:15:22,930 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:15:32,239 - INFO - Server was pinged.
+2024-09-30 09:15:32,946 - INFO - BEGIN (implicit)
+2024-09-30 09:15:32,947 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:15:32,948 - INFO - [cached since 297.3s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:15:32,957 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:15:32,958 - INFO - [cached since 287.3s ago] (5,)
+2024-09-30 09:15:32,962 - INFO - COMMIT
+2024-09-30 09:15:32,979 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:15:42,247 - INFO - Server was pinged.
+2024-09-30 09:15:42,993 - INFO - BEGIN (implicit)
+2024-09-30 09:15:42,995 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:15:42,996 - INFO - [cached since 307.4s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:15:43,002 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:15:43,003 - INFO - [cached since 297.4s ago] (5,)
+2024-09-30 09:15:43,007 - INFO - COMMIT
+2024-09-30 09:15:43,028 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:15:52,256 - INFO - Server was pinged.
+2024-09-30 09:15:53,046 - INFO - BEGIN (implicit)
+2024-09-30 09:15:53,048 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:15:53,049 - INFO - [cached since 317.5s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:15:53,057 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:15:53,057 - INFO - [cached since 307.4s ago] (5,)
+2024-09-30 09:15:53,063 - INFO - COMMIT
+2024-09-30 09:15:53,080 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:16:02,269 - INFO - Server was pinged.
+2024-09-30 09:16:03,096 - INFO - BEGIN (implicit)
+2024-09-30 09:16:03,098 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:16:03,099 - INFO - [cached since 327.5s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:16:03,106 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:16:03,107 - INFO - [cached since 317.5s ago] (5,)
+2024-09-30 09:16:03,112 - INFO - COMMIT
+2024-09-30 09:16:03,131 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:16:12,281 - INFO - Server was pinged.
+2024-09-30 09:16:13,146 - INFO - BEGIN (implicit)
+2024-09-30 09:16:13,148 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:16:13,149 - INFO - [cached since 337.5s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:16:13,156 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:16:13,157 - INFO - [cached since 327.5s ago] (5,)
+2024-09-30 09:16:13,162 - INFO - COMMIT
+2024-09-30 09:16:13,182 - INFO - Received heartbeat from albinxps.
+2024-09-30 09:16:22,292 - INFO - Server was pinged.
+2024-09-30 09:16:23,198 - INFO - BEGIN (implicit)
+2024-09-30 09:16:23,200 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices 
+WHERE devices.hardware_id = ?
+2024-09-30 09:16:23,200 - INFO - [cached since 347.6s ago] ('55c97bf4-7bea-11ef-a011-efb03faa974e',)
+2024-09-30 09:16:23,207 - INFO - UPDATE devices SET last_heartbeat=CURRENT_TIMESTAMP WHERE devices.id = ?
+2024-09-30 09:16:23,208 - INFO - [cached since 337.6s ago] (5,)
+2024-09-30 09:16:23,213 - INFO - COMMIT
+2024-09-30 09:16:23,232 - INFO - Received heartbeat from albinxps.
+2024-09-30 10:53:02,801 - INFO - BEGIN (implicit)
+2024-09-30 10:53:02,801 - INFO - PRAGMA main.table_info("devices")
+2024-09-30 10:53:02,802 - INFO - [raw sql] ()
+2024-09-30 10:53:02,804 - INFO - PRAGMA main.table_info("users")
+2024-09-30 10:53:02,804 - INFO - [raw sql] ()
+2024-09-30 10:53:02,806 - INFO - COMMIT
+2024-09-30 10:53:02,808 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-09-30 10:53:22,503 - INFO - BEGIN (implicit)
+2024-09-30 10:53:22,518 - INFO - SELECT users.id, users.username, users.password_hash 
+FROM users 
+WHERE users.username = ?
+2024-09-30 10:53:22,519 - INFO - [generated in 0.00140s] ('admin',)
+2024-09-30 10:53:22,879 - INFO - User admin logged in.
+2024-09-30 10:53:22,879 - INFO - ROLLBACK
+2024-09-30 10:53:22,893 - INFO - BEGIN (implicit)
+2024-09-30 10:53:22,895 - INFO - SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat 
+FROM devices
+2024-09-30 10:53:22,895 - INFO - [generated in 0.00042s] ()
+2024-09-30 10:53:22,898 - INFO - ROLLBACK
+2024-09-30 10:53:34,456 - INFO - BEGIN (implicit)
+2024-09-30 10:53:34,464 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-30 10:53:34,465 - INFO - [generated in 0.00151s] (2,)
+2024-09-30 10:53:34,807 - INFO - ROLLBACK
+2024-09-30 10:53:40,821 - INFO - BEGIN (implicit)
+2024-09-30 10:53:40,823 - INFO - SELECT devices.id AS devices_id, devices.hardware_id AS devices_hardware_id, devices.device_name AS devices_device_name, devices.os_version AS devices_os_version, devices.geo_location AS devices_geo_location, devices.installed_apps AS devices_installed_apps, devices.timestamp AS devices_timestamp, devices.last_heartbeat AS devices_last_heartbeat 
+FROM devices 
+WHERE devices.id = ?
+2024-09-30 10:53:40,824 - INFO - [cached since 6.361s ago] (5,)
+2024-09-30 10:53:41,003 - INFO - ROLLBACK
