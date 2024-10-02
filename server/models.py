@@ -1,6 +1,4 @@
-from datetime import datetime
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Integer, String, Text, DateTime, func, Boolean
 from flask_bcrypt import Bcrypt
 from flask_login import UserMixin
@@ -8,11 +6,6 @@ from flask_login import UserMixin
 bcrypt = Bcrypt()
 
 Base = declarative_base()
-
-DATABASE_URL = "sqlite+aiosqlite:///sqlite.db"
-async_engine = create_async_engine(DATABASE_URL, echo=True)
-
-AsyncSessionLocal = sessionmaker(bind=async_engine, class_=AsyncSession, expire_on_commit=False)
 
 class Device(Base):
     __tablename__ = 'devices'

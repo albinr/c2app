@@ -3,10 +3,11 @@ import asyncio
 from quart import Blueprint, render_template, redirect, url_for, flash, jsonify, request, current_app, websocket
 from quart_auth import AuthUser, login_user, logout_user, current_user, login_required, Unauthorized
 from sqlalchemy.future import select
-from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import func
-from models import AsyncSessionLocal, Device, User
+from config import Config
+from models import Device, User
 from nominatim import get_location_from_coordinates
+
 
 log_connections = set()
 
@@ -21,7 +22,7 @@ async def signup():
     """
     Verify async!!!
     """
-    async with AsyncSessionLocal() as session:
+    async with Config.AsyncSessionLocal() as session:
         if request.method == 'POST':
             form_data = await request.form
             username = form_data['username']
@@ -49,7 +50,7 @@ async def login():
     """
     Verify async!!!
     """
-    async with AsyncSessionLocal() as session:
+    async with Config.AsyncSessionLocal() as session:
         if request.method == 'POST':
             form_data = await request.form
             username = form_data['username']
@@ -80,7 +81,7 @@ async def logout():
 @routes.route('/devices')
 @login_required
 async def devices():
-    async with AsyncSessionLocal() as session:
+    async with Config.AsyncSessionLocal() as session:
         result = await session.execute(select(Device))
         devices = result.scalars().all()
     return await render_template("devices.html", devices=devices)
@@ -88,7 +89,7 @@ async def devices():
 @routes.route('/devices/<int:id>')
 @login_required
 async def single_device(id):
-    async with AsyncSessionLocal() as session:
+    async with Config.AsyncSessionLocal() as session:
         device = await session.get(Device, id)
         if device.geo_location:
             device.country, device.city = get_location_from_coordinates(device.geo_location)
@@ -99,7 +100,7 @@ async def single_device(id):
 @routes.route('/device/<int:id>/delete', methods=['POST'])
 @login_required
 async def post_delete_device(id):
-    async with AsyncSessionLocal() as session:
+    async with Config.AsyncSessionLocal() as session:
         device = await session.get(Device, id)
         await session.delete(device)
         await session.commit()
@@ -136,7 +137,7 @@ async def ws_logs():
 async def api_add_device():
     try:
         data = await request.json
-        async with AsyncSessionLocal() as session:
+        async with Config.AsyncSessionLocal() as session:
             result = await session.execute(select(Device).filter_by(hardware_id=data['hardware_id']))
             existing_device = result.scalars().first()
 
@@ -168,7 +169,7 @@ async def api_device_heartbeat():
         if not hardware_id:
             return jsonify({"error": "Hardware ID is required"}), 400
 
-        async with AsyncSessionLocal() as session:
+        async with Config.AsyncSessionLocal() as session:
             result = await session.execute(select(Device).filter_by(hardware_id=hardware_id))
             device = result.scalars().first()
 
