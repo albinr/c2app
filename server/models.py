@@ -1,7 +1,7 @@
 from datetime import datetime
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import declarative_base, sessionmaker
-from sqlalchemy import Column, Integer, String, Text, DateTime, func
+from sqlalchemy import Column, Integer, String, Text, DateTime, func, Boolean
 from flask_bcrypt import Bcrypt
 from flask_login import UserMixin
 
@@ -25,6 +25,7 @@ class Device(Base):
     installed_apps = Column(Text)
     timestamp = Column(DateTime, default=func.current_timestamp())
     last_heartbeat = Column(DateTime)
+    can_view_info = Column(Boolean, default=False)
 
     def __repr__(self):
         return f"<Device {self.device_name}>"
