@@ -84,6 +84,15 @@ async def devices():
     async with Config.AsyncSessionLocal() as session:
         result = await session.execute(select(Device))
         devices = result.scalars().all()
+        def sort_key(device):
+            if device.is_banned:
+                return 1
+            elif device.is_online():
+                return 0
+            else:
+                return 2
+
+        devices.sort(key=sort_key)
     return await render_template("devices.html", devices=devices)
 
 @routes.route('/devices/<int:id>')
@@ -108,6 +117,22 @@ async def post_delete_device(id):
         await flash(f"Device {device.device_name} deleted successfully!")
     return redirect(url_for('routes.devices'))
 
+@routes.route('/device/<int:id>/toggle_ban', methods=['POST'])
+@login_required
+async def post_toggle_ban_device(id):
+    async with Config.AsyncSessionLocal() as session:
+        device = await session.get(Device, id)
+        if device:
+            device.is_banned = not device.is_banned
+            await session.commit()
+            action = "banned" if device.is_banned else "unbanned"
+            current_app.logger.info(f"User {current_user.auth_id} {action} device {device.device_name}.")
+            await flash(f"Device {device.device_name} has been {action} successfully!")
+        else:
+            await flash(f"Device with ID {id} not found.", 'error')
+    return redirect(url_for('routes.devices'))
+
+
 @routes.route('/logs')
 @login_required
 async def view_logs():
@@ -120,6 +145,7 @@ async def view_logs():
         return redirect(url_for('routes.main'))
 
 @routes.websocket('/ws/logs')
+@login_required
 async def ws_logs():
     log_connections.add(websocket._get_current_object())
     try:

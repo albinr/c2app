@@ -123,6 +123,7 @@ class ClientApp:
             if response.status_code == 200:
                 self.status_indicator.create_oval(5, 5, 20, 20, fill="green")
                 self.server_status_label.config(text="Server is running", foreground="green")
+                print("Server ping sent")
             else:
                 self.status_indicator.create_oval(5, 5, 20, 20, fill="red")
                 self.server_status_label.config(text="Server is not available", foreground="red")

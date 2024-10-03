@@ -191,7 +191,7 @@ button.delete:hover {
 }
 
 .yellow-button {
-    color: #fff;
+    color: #000;
     background-color: yellow;
     /*background-image: linear-gradient(yellow, darken(yellow, 20%)); */
     border-color: darken(yellow, 20%);

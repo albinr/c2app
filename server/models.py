@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Integer, String, Text, DateTime, func, Boolean
 from flask_bcrypt import Bcrypt
@@ -19,9 +20,14 @@ class Device(Base):
     timestamp = Column(DateTime, default=func.current_timestamp())
     last_heartbeat = Column(DateTime)
     can_view_info = Column(Boolean, default=False)
+    is_banned = Column(Boolean, default=False)
+
+    def is_online(self):
+        return self.last_heartbeat and (datetime.utcnow() - self.last_heartbeat) < timedelta(seconds=60)
 
     def __repr__(self):
         return f"<Device {self.device_name}>"
+
 
 class User(Base, UserMixin):
     __tablename__ = 'users'

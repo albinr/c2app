@@ -1,7 +1,5 @@
-import os
 from quart import Quart
 from quart_auth import QuartAuth
-from sqlalchemy.ext.asyncio import AsyncSession
 from config import Config
 from models import Base
 from logging_config import setup_logging
@@ -11,9 +9,6 @@ app = Quart(__name__)
 app.config.from_object(Config)
 
 auth_manager = QuartAuth(app)
-
-if not os.path.exists('logs'):
-    os.makedirs('logs')
 
 setup_logging()
 

@@ -11,6 +11,7 @@
                 <th>OS Version</th>
                 <th>Registered On</th>
                 <th>Last Heartbeat</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -22,8 +23,22 @@
                 <td>{{ device.timestamp }}</td>
                 <td>{{ device.last_heartbeat or 'No heartbeats yet' }}</td>
                 <td>
+                    {% if device.is_online() %}
+                        <span style="color:green">Online</span>
+                    {% else %}
+                        <span style="color:red">Offline</span>
+                    {% endif %}
+                </td>
+                <td>
                     <form action="{{ url_for('routes.post_delete_device', id=device.id) }}" method="POST" style="display:inline;">
                         <button type="submit" class="button red-button">Delete</button>
+                    </form>
+                    <form action="{{ url_for('routes.post_toggle_ban_device', id=device.id) }}" method="POST" style="display:inline;">
+                        {% if device.is_banned %}
+                            <button type="submit" class="button green-button">Unban</button>
+                        {% else %}
+                            <button type="submit" class="button red-button">Ban</button>
+                        {% endif %}
                     </form>
                 </td>
             </tr>
