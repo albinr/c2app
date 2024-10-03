@@ -1,11 +1,11 @@
 import tkinter as tk
+import threading
 import platform
 import os
 import uuid
 from tkinter import ttk, messagebox, filedialog
 import requests
 import subprocess
-
 
 SERVER_URL = 'http://localhost:5000'
 
@@ -20,37 +20,54 @@ class ClientApp:
         self.geo_location = self.get_geolocation()
         self.installed_apps = self.get_installed_apps()
 
-        # ttk.Label(root, text=f"Device Name: {self.device_name}").grid(column=0, row=0, padx=10, pady=5)
-        # ttk.Label(root, text=f"OS Version: {self.os_version}").grid(column=0, row=1, padx=10, pady=5)
-        # ttk.Label(root, text=f"Geo location: {self.geo_location}").grid(column=0, row=2, padx=10, pady=5)
-        # ttk.Label(root, text=f"Hardware id: {self.hardware_id}").grid(column=0, row=3, padx=10, pady=5)
+        self.status_frame = ttk.Frame(root)
+        self.status_frame.grid(column=0, row=0, padx=10, pady=5)
 
-        self.server_status_label = ttk.Label(root, text="Checking server...", foreground="orange")
-        self.server_status_label.grid(column=0, row=0, padx=10, pady=5)
+        self.server_status_label = ttk.Label(self.status_frame, text="Server status:")
+        self.server_status_label.grid(column=0, row=0)
+        self.server_status_indicator = tk.Canvas(self.status_frame, width=20, height=20)
+        self.server_status_indicator.grid(column=1, row=0, padx=5)
 
-        self.status_indicator = tk.Canvas(root, width=20, height=20)
-        self.status_indicator.grid(column=0, row=2)
+        self.device_status_label = ttk.Label(self.status_frame, text="Device connection:")
+        self.device_status_label.grid(column=0, row=1)
+        self.device_status_indicator = tk.Canvas(self.status_frame, width=20, height=20)
+        self.device_status_indicator.grid(column=1, row=1, padx=5)
 
-        ttk.Button(root, text="Upload a file", command=self.upload_file).grid(column=0, row=1, columnspan=2, padx=20, pady=10)
-
-        ttk.Button(root, text="Quit", command=root.quit).grid(column=0, row=2, columnspan=2, padx=20, pady=10)
+        ttk.Button(root, text="Run in background", command=self.minimize_in_background).grid(column=0, row=2, columnspan=2, padx=20, pady=10)
+        ttk.Button(root, text="Upload a file", command=self.upload_file).grid(column=0, row=3, columnspan=2, padx=20, pady=10)
+        ttk.Button(root, text="Quit", command=root.quit).grid(column=0, row=4, columnspan=2, padx=20, pady=10)
 
         self.print_all()
         self.check_server()
         self.add_device()
         self.send_heartbeat()
 
+        threading.Thread(target=self.terminal_input_listener, daemon=True).start()
+
+    def terminal_input_listener(self):
+        while True:
+            user_input = input("Type 'show' to restore the window: ")
+            if user_input.lower() == "show":
+                self.restore_window()
+
+    def minimize_in_background(self):
+        self.root.withdraw()
+        print("Window is minimized. Type 'show' in the terminal to restore it.")
+
+    def restore_window(self):
+        self.root.deiconify()
+
     def add_device(self):
         try:
             data = {
-                'device_name': self.device_name, 
+                'device_name': self.device_name,
                 'os_version': self.os_version,
                 'hardware_id': self.hardware_id,
                 'geo_location': self.geo_location,
                 'installed_apps': self.installed_apps
             }
             response = requests.post(f"{SERVER_URL}/device", json=data)
-            
+
             if response.status_code == 201:
                 print("Device added!")
             elif response.status_code == 400 and 'already exists' in response.text:
@@ -67,19 +84,19 @@ class ClientApp:
         except Exception as e:
             return f"Error executing command: {e}"
 
-
     def upload_file(self):
         file_path = filedialog.askopenfilename()
         if file_path:
             try:
-                files = {'file': open(file_path, 'rb')}
-                data = {'hardware_id': self.hardware_id}
-                response = requests.post(f"{SERVER_URL}/upload", files=files, data=data)
-                
-                if response.status_code == 200:
-                    messagebox.showinfo("Success", "File uploaded successfully!")
-                else:
-                    messagebox.showerror("Error", f"Failed to upload file: {response.text}")
+                with open(file_path, 'rb') as file:
+                    files = {'file': file}
+                    data = {'hardware_id': self.hardware_id}
+                    response = requests.post(f"{SERVER_URL}/upload", files=files, data=data)
+
+                    if response.status_code == 200:
+                        messagebox.showinfo("Success", "File uploaded successfully!")
+                    else:
+                        messagebox.showerror("Error", f"Failed to upload file: {response.text}")
             except Exception as e:
                 messagebox.showerror("Error", f"Error uploading file: {e}")
 
@@ -98,14 +115,12 @@ class ClientApp:
             try:
                 result = subprocess.run(['dpkg', '--get-selections'], stdout=subprocess.PIPE, check=True)
                 installed_apps = result.stdout.decode('utf-8').split('\n')
-                # Filter installed apps marked as "install"
                 installed_apps = [app.split()[0] for app in installed_apps if "install" in app]
-                return installed_apps[:10]  # Limit to first 10 apps, or remove this if you want all
+                return installed_apps[:10]
             except subprocess.CalledProcessError as e:
                 return [f"Error getting apps from Linux: {e}"]
             except Exception as e:
                 return [f"Unexpected error on Linux: {e}"]
-
         else:
             return ["Installed apps retrieval is not supported on this OS."]
 
@@ -117,25 +132,10 @@ class ClientApp:
         except Exception as e:
             return f"Error retrieving location: {e}"
 
-    def check_server(self):
-        try:
-            response = requests.get(f"{SERVER_URL}/ping")
-            if response.status_code == 200:
-                self.status_indicator.create_oval(5, 5, 20, 20, fill="green")
-                self.server_status_label.config(text="Server is running", foreground="green")
-                print("Server ping sent")
-            else:
-                self.status_indicator.create_oval(5, 5, 20, 20, fill="red")
-                self.server_status_label.config(text="Server is not available", foreground="red")
-        except Exception as e:
-            self.server_status_label.config(text="Server is not available", foreground="red")
-
-        self.root.after(30000, self.check_server)
-
     def get_device_id(self):
         device_id = uuid.uuid1()
         return str(device_id)
-    
+
     def load_hardware_id(self):
         hardware_id_file = 'hardware_id.txt'
         if os.path.exists(hardware_id_file):
@@ -148,24 +148,51 @@ class ClientApp:
             return new_hardware_id
 
     def send_heartbeat(self):
-        try:
-            response = requests.post(f"{SERVER_URL}/device/heartbeat", json={"hardware_id": self.hardware_id})
-            if response.status_code == 200:
-                print("Heartbeat sent")
-            else:
-                print("Failed to send heartbeat")
-        except:
-            print("Server not available")
+        def background_heartbeat():
+            try:
+                response = requests.post(f"{SERVER_URL}/device/heartbeat", json={"hardware_id": self.hardware_id})
+                if response.status_code == 200:
+                    print("Heartbeat sent")
+                    self.root.after(0, lambda: self.update_device_status("green"))
+                else:
+                    print("Failed to send heartbeat")
+                    self.root.after(0, lambda: self.update_device_status("red"))
+            except:
+                print("Server not available")
+                self.root.after(0, lambda: self.update_device_status("red"))
 
-        self.root.after(10000, self.send_heartbeat)
+        threading.Thread(target=background_heartbeat).start()
+        self.root.after(30000, self.send_heartbeat)
 
+    def check_server(self):
+        def background_check():
+            try:
+                response = requests.get(f"{SERVER_URL}/ping")
+                print("Server pinged")
+                if response.status_code == 200:
+                    self.root.after(0, lambda: self.update_server_status("green"))
+                else:
+                    self.root.after(0, lambda: self.update_server_status("red"))
+            except Exception as e:
+                self.root.after(0, lambda: self.update_server_status("red"))
+
+        threading.Thread(target=background_check).start()
+        self.root.after(60000, self.check_server)
+
+    def update_server_status(self, color):
+        self.server_status_indicator.delete("all")
+        self.server_status_indicator.create_oval(5, 5, 20, 20, fill=color)
+
+    def update_device_status(self, color):
+        self.device_status_indicator.delete("all")
+        self.device_status_indicator.create_oval(5, 5, 20, 20, fill=color)
 
     def print_all(self):
-        print(self.device_name)
-        print(self.os_version)
-        print("hardware_id", self.hardware_id)
-        print(self.geo_location)
-        print(self.installed_apps)
+        print("Device name:       ", self.device_name)
+        print("Device os:         ", self.os_version)
+        print("Device hardware_id:", self.hardware_id)
+        print("Device coordinates:", self.geo_location)
+        print("Installed apps:    ", self.installed_apps)
 
 
 if __name__ == "__main__":

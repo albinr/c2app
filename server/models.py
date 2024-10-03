@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Integer, String, Text, DateTime, func, Boolean
+from quart_auth import AuthUser
 from flask_bcrypt import Bcrypt
-from flask_login import UserMixin
 
 bcrypt = Bcrypt()
 
@@ -29,15 +29,21 @@ class Device(Base):
         return f"<Device {self.device_name}>"
 
 
-class User(Base, UserMixin):
+class User(Base, AuthUser):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True)
     username = Column(String(150), unique=True, nullable=False)
     password_hash = Column(String(150), nullable=False)
 
+    @property
+    def auth_id(self):
+        return self.username
+
     def set_password(self, password):
+        # Use bcrypt to hash passwords
         self.password_hash = bcrypt.generate_password_hash(password).decode('utf-8')
 
     def check_password(self, password):
+        # Check if the given password matches the stored hashed password
         return bcrypt.check_password_hash(self.password_hash, password)

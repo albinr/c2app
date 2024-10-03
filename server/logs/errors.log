@@ -89,3 +89,37 @@ sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: devi
 [SQL: SELECT devices.id, devices.hardware_id, devices.device_name, devices.os_version, devices.geo_location, devices.installed_apps, devices.timestamp, devices.last_heartbeat, devices.can_view_info, devices.is_banned 
 FROM devices]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-03 15:24:39,739 - ERROR - Exception on request POST /device/1/toggle_ban
+Traceback (most recent call last):
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1403, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1441, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1029, in handle_user_exception
+    raise error
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1439, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1535, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart_auth/globals.py", line 64, in wrapper
+    return await current_app.ensure_async(func)(*args, **kwargs)
+  File "/home/albinr/git/bth/c2app/server/routes.py", line 129, in post_toggle_ban_device
+    current_app.logger.info(f"User {current_user.username} {action} device {device.device_name}.")
+AttributeError: 'AuthUser' object has no attribute 'username'
+2024-10-03 15:53:02,983 - ERROR - Exception on request POST /device/1/toggle_ban
+Traceback (most recent call last):
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1403, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1441, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1029, in handle_user_exception
+    raise error
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1439, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1535, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart_auth/globals.py", line 64, in wrapper
+    return await current_app.ensure_async(func)(*args, **kwargs)
+  File "/home/albinr/git/bth/c2app/server/routes.py", line 129, in post_toggle_ban_device
+    current_app.logger.info(f"User {current_user.username} {action} device {device.device_name}.")
+AttributeError: 'AuthUser' object has no attribute 'username'

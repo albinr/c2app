@@ -1683,3 +1683,393 @@ FROM devices]
 2024-10-02 22:04:19,722 - INFO - Received heartbeat from albinxps.
 2024-10-02 22:04:23,375 - INFO - Server was pinged.
 2024-10-02 22:04:29,770 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:50:08,051 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 12:50:26,360 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:50:56,335 - INFO - Server was pinged.
+2024-10-03 12:50:56,363 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:51:21,362 - INFO - Server was pinged.
+2024-10-03 12:51:21,394 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:51:51,410 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:52:21,363 - INFO - Server was pinged.
+2024-10-03 12:52:21,398 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:52:51,399 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:53:21,371 - INFO - Server was pinged.
+2024-10-03 12:53:21,405 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:53:51,417 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:54:21,377 - INFO - Server was pinged.
+2024-10-03 12:54:21,415 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:54:51,413 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:55:21,380 - INFO - Server was pinged.
+2024-10-03 12:55:21,425 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:55:51,428 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:56:21,382 - INFO - Server was pinged.
+2024-10-03 12:56:21,423 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:56:50,550 - INFO - Server was pinged.
+2024-10-03 12:56:50,582 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:57:20,602 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:57:50,560 - INFO - Server was pinged.
+2024-10-03 12:57:50,603 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:58:20,611 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:58:50,562 - INFO - Server was pinged.
+2024-10-03 12:58:50,601 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:59:20,603 - INFO - Received heartbeat from albinxps.
+2024-10-03 12:59:50,570 - INFO - Server was pinged.
+2024-10-03 12:59:50,607 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:00:20,603 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:00:25,166 - INFO - Server was pinged.
+2024-10-03 13:00:25,193 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:00:55,214 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:01:25,173 - INFO - Server was pinged.
+2024-10-03 13:01:25,211 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:01:55,205 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:02:25,171 - INFO - Server was pinged.
+2024-10-03 13:02:25,206 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:02:55,207 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:03:25,173 - INFO - Server was pinged.
+2024-10-03 13:03:25,208 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:03:55,208 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:04:25,174 - INFO - Server was pinged.
+2024-10-03 13:04:25,206 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:04:55,211 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:05:25,175 - INFO - Server was pinged.
+2024-10-03 13:05:25,212 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:05:55,213 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:06:25,185 - INFO - Server was pinged.
+2024-10-03 13:06:25,224 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:06:55,230 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:07:25,191 - INFO - Server was pinged.
+2024-10-03 13:07:25,231 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:07:55,242 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:08:25,195 - INFO - Server was pinged.
+2024-10-03 13:08:25,236 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:08:55,230 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:24:38,661 - INFO - Server was pinged.
+2024-10-03 13:24:38,691 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:25:08,690 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:25:10,988 - INFO - Server was pinged.
+2024-10-03 13:25:11,018 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:25:21,139 - INFO - Server was pinged.
+2024-10-03 13:25:21,167 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:25:33,953 - INFO - Server was pinged.
+2024-10-03 13:25:33,989 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:25:47,704 - INFO - Server was pinged.
+2024-10-03 13:25:47,730 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:31:35,508 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 13:31:47,716 - INFO - Server was pinged.
+2024-10-03 13:31:47,776 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:32:17,780 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:32:47,717 - INFO - Server was pinged.
+2024-10-03 13:32:47,776 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:33:17,785 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:33:47,723 - INFO - Server was pinged.
+2024-10-03 13:33:47,781 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:34:17,801 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:34:47,725 - INFO - Server was pinged.
+2024-10-03 13:34:47,802 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:35:17,808 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:35:47,725 - INFO - Server was pinged.
+2024-10-03 13:35:47,795 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:36:17,797 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:36:47,734 - INFO - Server was pinged.
+2024-10-03 13:36:47,800 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:37:17,803 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:37:52,841 - INFO - Server was pinged.
+2024-10-03 13:37:52,864 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:38:22,869 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:38:52,843 - INFO - Server was pinged.
+2024-10-03 13:38:52,869 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:39:22,881 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:39:41,492 - INFO - Server was pinged.
+2024-10-03 13:39:41,520 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:40:11,525 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:40:41,493 - INFO - Server was pinged.
+2024-10-03 13:40:41,530 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:41:11,536 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:41:41,497 - INFO - Server was pinged.
+2024-10-03 13:41:41,530 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:42:15,065 - INFO - Server was pinged.
+2024-10-03 13:42:15,098 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:42:45,097 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:43:15,071 - INFO - Server was pinged.
+2024-10-03 13:43:15,106 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:43:45,110 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:44:15,076 - INFO - Server was pinged.
+2024-10-03 13:44:15,112 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:44:45,124 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:45:15,075 - INFO - Server was pinged.
+2024-10-03 13:45:15,119 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:45:45,134 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:46:15,081 - INFO - Server was pinged.
+2024-10-03 13:46:15,122 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:46:45,149 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:47:15,089 - INFO - Server was pinged.
+2024-10-03 13:47:15,131 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:47:45,138 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:48:15,094 - INFO - Server was pinged.
+2024-10-03 13:48:15,137 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:48:45,151 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:49:15,097 - INFO - Server was pinged.
+2024-10-03 13:49:15,145 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:49:45,150 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:50:15,103 - INFO - Server was pinged.
+2024-10-03 13:50:15,147 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:50:45,170 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:51:15,108 - INFO - Server was pinged.
+2024-10-03 13:51:15,165 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:51:45,163 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:52:15,110 - INFO - Server was pinged.
+2024-10-03 13:52:15,159 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:52:45,181 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:53:15,108 - INFO - Server was pinged.
+2024-10-03 13:53:15,166 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:53:45,168 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:54:15,110 - INFO - Server was pinged.
+2024-10-03 13:54:15,177 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:54:45,172 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:54:50,720 - INFO - Server was pinged.
+2024-10-03 13:54:50,746 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:59:00,809 - INFO - Server was pinged.
+2024-10-03 13:59:00,834 - INFO - Received heartbeat from albinxps.
+2024-10-03 13:59:30,845 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:00:00,810 - INFO - Server was pinged.
+2024-10-03 14:00:00,843 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:00:30,841 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:01:00,811 - INFO - Server was pinged.
+2024-10-03 14:01:00,840 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:01:30,852 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:02:00,818 - INFO - Server was pinged.
+2024-10-03 14:02:00,848 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:02:30,848 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:03:00,822 - INFO - Server was pinged.
+2024-10-03 14:03:00,858 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:03:30,879 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:04:00,823 - INFO - Server was pinged.
+2024-10-03 14:04:00,862 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:04:30,862 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:05:00,824 - INFO - Server was pinged.
+2024-10-03 14:05:00,865 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:05:30,890 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:06:00,828 - INFO - Server was pinged.
+2024-10-03 14:06:00,880 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:06:30,883 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:07:00,829 - INFO - Server was pinged.
+2024-10-03 14:07:00,882 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:07:30,899 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:08:00,831 - INFO - Server was pinged.
+2024-10-03 14:08:00,886 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:08:30,886 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:09:00,833 - INFO - Server was pinged.
+2024-10-03 14:09:00,888 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:09:30,896 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:10:00,839 - INFO - Server was pinged.
+2024-10-03 14:10:00,885 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:10:30,906 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:11:00,837 - INFO - Server was pinged.
+2024-10-03 14:11:00,907 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:11:30,917 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:12:00,839 - INFO - Server was pinged.
+2024-10-03 14:12:00,909 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:12:30,912 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:13:00,842 - INFO - Server was pinged.
+2024-10-03 14:13:00,914 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:13:30,914 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:14:00,844 - INFO - Server was pinged.
+2024-10-03 14:14:00,919 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:14:30,919 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:15:00,845 - INFO - Server was pinged.
+2024-10-03 14:15:00,924 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:15:30,919 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:20:54,032 - INFO - Server was pinged.
+2024-10-03 14:20:54,064 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:21:24,071 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:21:54,032 - INFO - Server was pinged.
+2024-10-03 14:21:54,068 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:22:24,090 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:22:54,041 - INFO - Server was pinged.
+2024-10-03 14:22:54,077 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:23:54,048 - INFO - Server was pinged.
+2024-10-03 14:24:54,045 - INFO - Server was pinged.
+2024-10-03 14:25:54,053 - INFO - Server was pinged.
+2024-10-03 14:26:54,059 - INFO - Server was pinged.
+2024-10-03 14:27:54,059 - INFO - Server was pinged.
+2024-10-03 14:31:21,324 - INFO - Server was pinged.
+2024-10-03 14:31:21,361 - INFO - Received heartbeat from albinxps.
+2024-10-03 14:31:51,372 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:12:26,619 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 15:14:17,678 - INFO - Server was pinged.
+2024-10-03 15:14:17,722 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:19:51,257 - INFO - Server was pinged.
+2024-10-03 15:19:51,291 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:20:21,285 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:21:01,600 - INFO - User albin logged in.
+2024-10-03 15:21:23,671 - INFO - User 1 unbanned device albinxps.
+2024-10-03 15:23:13,463 - INFO - Server was pinged.
+2024-10-03 15:23:13,502 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:23:43,523 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:24:13,467 - INFO - Server was pinged.
+2024-10-03 15:24:13,505 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:24:28,311 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 15:24:35,789 - INFO - User albin logged in.
+2024-10-03 15:24:39,739 - ERROR - Exception on request POST /device/1/toggle_ban
+Traceback (most recent call last):
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1403, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1441, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1029, in handle_user_exception
+    raise error
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1439, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1535, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart_auth/globals.py", line 64, in wrapper
+    return await current_app.ensure_async(func)(*args, **kwargs)
+  File "/home/albinr/git/bth/c2app/server/routes.py", line 129, in post_toggle_ban_device
+    current_app.logger.info(f"User {current_user.username} {action} device {device.device_name}.")
+AttributeError: 'AuthUser' object has no attribute 'username'
+2024-10-03 15:24:43,506 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:25:13,465 - INFO - Server was pinged.
+2024-10-03 15:25:13,514 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:25:43,534 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:26:13,466 - INFO - Server was pinged.
+2024-10-03 15:26:13,514 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:26:42,934 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 15:26:43,527 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:26:50,599 - INFO - User albin logged in.
+2024-10-03 15:27:06,501 - INFO - User AuthUser(auth_id=1, action=Action.PASS) unbanned device albinxps.
+2024-10-03 15:27:13,474 - INFO - Server was pinged.
+2024-10-03 15:27:13,524 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:27:43,528 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:28:13,476 - INFO - Server was pinged.
+2024-10-03 15:28:13,535 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:28:43,563 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:29:13,484 - INFO - Server was pinged.
+2024-10-03 15:29:13,540 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:29:43,538 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:30:13,487 - INFO - Server was pinged.
+2024-10-03 15:30:13,543 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:30:43,572 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:31:13,487 - INFO - Server was pinged.
+2024-10-03 15:31:13,607 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:31:43,561 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:32:13,494 - INFO - Server was pinged.
+2024-10-03 15:32:13,559 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:49:26,992 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 15:49:42,641 - INFO - Failed login with albin
+2024-10-03 15:49:51,607 - INFO - User albin logged in.
+2024-10-03 15:50:21,503 - INFO - Server was pinged.
+2024-10-03 15:50:21,508 - INFO - New device: albinxps added to database.
+2024-10-03 15:50:21,545 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:50:51,564 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:51:21,503 - INFO - Server was pinged.
+2024-10-03 15:51:21,552 - INFO - Received heartbeat from albinxps.
+2024-10-03 15:52:33,224 - INFO - User 1 banned device albinxps.
+2024-10-03 15:52:55,071 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 15:52:59,564 - INFO - User albin logged in.
+2024-10-03 15:53:02,983 - ERROR - Exception on request POST /device/1/toggle_ban
+Traceback (most recent call last):
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1403, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1441, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1029, in handle_user_exception
+    raise error
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1439, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart/app.py", line 1535, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+  File "/home/albinr/git/bth/c2app/server/venv/lib/python3.10/site-packages/quart_auth/globals.py", line 64, in wrapper
+    return await current_app.ensure_async(func)(*args, **kwargs)
+  File "/home/albinr/git/bth/c2app/server/routes.py", line 129, in post_toggle_ban_device
+    current_app.logger.info(f"User {current_user.username} {action} device {device.device_name}.")
+AttributeError: 'AuthUser' object has no attribute 'username'
+2024-10-03 15:59:52,645 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 16:00:03,132 - INFO - User albin logged in.
+2024-10-03 16:00:07,445 - INFO - User 1 banned device albinxps.
+2024-10-03 16:00:39,837 - INFO - User 1 unbanned device albinxps.
+2024-10-03 16:06:34,947 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 16:06:40,901 - INFO - User albin logged in.
+2024-10-03 16:07:05,162 - INFO - User 1 banned device albinxps.
+2024-10-03 16:12:44,898 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 16:12:50,015 - INFO - User albin logged in.
+2024-10-03 16:12:57,373 - INFO - User 1 unbanned device albinxps.
+2024-10-03 16:13:00,512 - INFO - User 1 banned device albinxps.
+2024-10-03 16:13:03,235 - INFO - User 1 unbanned device albinxps.
+2024-10-03 16:13:04,288 - INFO - User 1 banned device albinxps.
+2024-10-03 16:14:52,713 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-10-03 16:15:03,583 - INFO - User albin logged in.
+2024-10-03 18:09:18,105 - INFO - User 1 unbanned device albinxps.
+2024-10-03 18:09:19,699 - INFO - User 1 banned device albinxps.
+2024-10-03 18:09:20,962 - INFO - User 1 unbanned device albinxps.
+2024-10-03 18:59:55,749 - INFO - Server was pinged.
+2024-10-03 18:59:55,879 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:00:25,852 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:31:16,647 - INFO - Server was pinged.
+2024-10-03 19:31:18,714 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:31:48,738 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:33:11,838 - INFO - Server was pinged.
+2024-10-03 19:33:11,866 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:33:41,875 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:40:18,201 - INFO - Server was pinged.
+2024-10-03 19:40:18,235 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:40:40,076 - INFO - Server was pinged.
+2024-10-03 19:40:40,119 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:41:10,110 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:41:40,075 - INFO - Server was pinged.
+2024-10-03 19:41:40,112 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:42:10,112 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:42:40,076 - INFO - Server was pinged.
+2024-10-03 19:42:40,117 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:43:10,116 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:43:40,078 - INFO - Server was pinged.
+2024-10-03 19:43:40,125 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:44:10,118 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:44:40,080 - INFO - Server was pinged.
+2024-10-03 19:44:40,124 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:45:10,120 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:45:40,080 - INFO - Server was pinged.
+2024-10-03 19:45:40,127 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:46:10,131 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:46:40,082 - INFO - Server was pinged.
+2024-10-03 19:46:40,127 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:47:10,130 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:47:40,083 - INFO - Server was pinged.
+2024-10-03 19:47:40,135 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:48:10,130 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:48:40,085 - INFO - Server was pinged.
+2024-10-03 19:48:40,137 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:49:10,138 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:49:40,086 - INFO - Server was pinged.
+2024-10-03 19:49:40,139 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:50:10,139 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:50:40,088 - INFO - Server was pinged.
+2024-10-03 19:50:40,141 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:51:10,143 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:51:40,089 - INFO - Server was pinged.
+2024-10-03 19:51:40,144 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:52:10,146 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:52:40,090 - INFO - Server was pinged.
+2024-10-03 19:52:40,150 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:53:10,149 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:53:40,092 - INFO - Server was pinged.
+2024-10-03 19:53:40,149 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:54:10,150 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:54:40,093 - INFO - Server was pinged.
+2024-10-03 19:54:40,151 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:55:10,156 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:55:40,094 - INFO - Server was pinged.
+2024-10-03 19:55:40,158 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:56:10,158 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:56:40,096 - INFO - Server was pinged.
+2024-10-03 19:56:40,159 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:57:10,162 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:57:40,098 - INFO - Server was pinged.
+2024-10-03 19:57:40,164 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:58:10,165 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:58:40,099 - INFO - Server was pinged.
+2024-10-03 19:58:40,163 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:59:04,202 - INFO - Server was pinged.
+2024-10-03 19:59:04,238 - INFO - Received heartbeat from albinxps.
+2024-10-03 19:59:34,232 - INFO - Received heartbeat from albinxps.
+2024-10-03 20:00:04,201 - INFO - Server was pinged.
+2024-10-03 20:00:04,234 - INFO - Received heartbeat from albinxps.

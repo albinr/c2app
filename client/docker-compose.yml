@@ -1,0 +1,13 @@
+services:
+  client:
+    image: c2-client
+    environment:
+      - SERVER_URL=http://host.docker.internal:5000
+    deploy:
+      replicas: 10
+    networks:
+      - c2network
+
+networks:
+  c2network:
+    driver: bridge

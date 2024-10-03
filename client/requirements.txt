@@ -1,0 +1,13 @@
+altgraph==0.17.4
+certifi==2024.8.30
+charset-normalizer==3.3.2
+idna==3.10
+packaging==24.1
+pillow==10.4.0
+pyinstaller==6.10.0
+pyinstaller-hooks-contrib==2024.8
+pystray==0.19.5
+python-xlib==0.33
+requests==2.32.3
+six==1.16.0
+urllib3==2.2.3
